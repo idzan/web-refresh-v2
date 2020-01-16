@@ -1,4 +1,4 @@
-@import "utils";
+@import "vars";
 // Basics
 html {
     background: $bg;
@@ -136,3 +136,6 @@ footer {
     text-transform: uppercase;
     text-decoration: none;
 }
+
+// Cookie Consent & Others
+@import "utils";
