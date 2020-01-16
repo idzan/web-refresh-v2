@@ -564,18 +564,9 @@ footer {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  /* grid-column: 2/3; */
-  /* padding: 1.5em;
-    background: $accent;
-    color: $linksdark;
-    border-radius: 1em;
-    text-transform: uppercase;
-    text-decoration: none; */
 }
 
 .cta {
-  /*     display: grid;
- */
   -ms-grid-columns: subgrid;
       grid-template-columns: subgrid;
   -ms-grid-column: 2;
