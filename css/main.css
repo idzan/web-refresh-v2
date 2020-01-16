@@ -212,13 +212,12 @@ footer {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    background: #222831;
-    color: #eee;
-  }
-}
-
+/* @media (prefers-color-scheme: dark) {
+    html {
+        background: $bgdark;
+        color: $primarydark;
+    }
+} */
 .cc-window {
   opacity: 1;
   -webkit-transition: opacity 1s ease;

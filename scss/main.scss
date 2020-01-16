@@ -137,11 +137,11 @@ footer {
     text-decoration: none;
 }
 // Dark Mode
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     html {
         background: $bgdark;
         color: $primarydark;
     }
-}
+} */
 // Cookie Consent & Others
 @import "utils";
