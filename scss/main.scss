@@ -102,7 +102,6 @@ footer {
 }
 // Cover
 .cover {
-
     height: 75vh;
 }
 .headline {
@@ -119,11 +118,31 @@ footer {
     grid-column: 2/4;
     text-align: center;
 }
-.cta {
+.button {
     grid-area: content;
     grid-row: 3;
     grid-column: 2/4;
     text-align: center;
     align-self: flex-start;
-/*     align-self: center;
- */}
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-column: 2/3; */
+    /* padding: 1.5em;
+    background: $accent;
+    color: $linksdark;
+    border-radius: 1em;
+    text-transform: uppercase;
+    text-decoration: none; */
+    
+}
+.cta {
+/*     display: grid;
+ */    grid-template-columns: subgrid;
+    grid-column: 2/4;
+    padding: 1.5em;
+background: $accent;
+color: $linksdark;
+border-radius: 1em;
+text-transform: uppercase;
+text-decoration: none;
+}
