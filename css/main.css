@@ -50,6 +50,7 @@ nav .item {
 .logo {
   -ms-grid-column: 1;
   grid-column: 1;
+  width: 7.5vw;
 }
 
 #nav-switch, .menu {
