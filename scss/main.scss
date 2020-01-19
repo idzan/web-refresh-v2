@@ -40,7 +40,7 @@ nav {
 }
 .logo {
     grid-column: 1;
-    width: 7.5vw;
+    width: 10vw;
 }
 #nav-switch, .menu {
     display: none;
@@ -138,11 +138,11 @@ footer {
     text-decoration: none;
 }
 // Dark Mode
-/* @media (prefers-color-scheme: dark) {
-    html {
+@media (prefers-color-scheme: dark) {
+    /* html {
         background: $bgdark;
         color: $primarydark;
-    }
-} */
+    } */
+}
 // Cookie Consent & Others
 @import "utils";
