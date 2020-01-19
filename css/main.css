@@ -50,7 +50,7 @@ nav .item {
 .logo {
   -ms-grid-column: 1;
   grid-column: 1;
-  width: 7.5vw;
+  width: 10vw;
 }
 
 #nav-switch, .menu {
@@ -213,12 +213,20 @@ footer {
   text-decoration: none;
 }
 
-/* @media (prefers-color-scheme: dark) {
-    html {
-        background: $bgdark;
-        color: $primarydark;
-    }
-} */
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #222831;
+    color: #eee;
+  }
+}
+
+@media only screen and (prefers-color-scheme: dark) and (max-width: 1025px) {
+  .menu {
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
+  }
+}
+
 .cc-window {
   opacity: 1;
   -webkit-transition: opacity 1s ease;

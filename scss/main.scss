@@ -139,10 +139,15 @@ footer {
 }
 // Dark Mode
 @media (prefers-color-scheme: dark) {
-    /* html {
+    html {
         background: $bgdark;
         color: $primarydark;
-    } */
+    }
+    @media only screen and (max-width: 1025px) {
+        .menu {
+            filter: invert(100%);
+        }
+    }
 }
 // Cookie Consent & Others
 @import "utils";
