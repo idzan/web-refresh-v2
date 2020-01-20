@@ -265,6 +265,9 @@ hr {
   .legal a {
     color: #eee;
   }
+  hr {
+    color: #eee;
+  }
 }
 
 @media only screen and (prefers-color-scheme: dark) and (max-width: 1025px) {

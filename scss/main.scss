@@ -165,6 +165,7 @@ hr {
 }
 // Dark Mode
 @media (prefers-color-scheme: dark) {
+    // Basics
     :root {
         :focus {
             outline: solid 1px $primarydark;
@@ -174,6 +175,7 @@ hr {
         background: $bgdark;
         color: $primarydark;
     }
+    // Navigation
     nav {
         .item {
             color: $primarydark;
@@ -187,11 +189,17 @@ hr {
             }
         }
     }
+    // Footer navigation
     .legal {
         a {
             color: $primarydark;
         }
     }
+    // Spacing
+    hr {
+        color: $primarydark;
+    }
+    // Menu icon inverted
     @media only screen and (max-width: 1025px) {
         .menu {
             filter: invert(100%);
