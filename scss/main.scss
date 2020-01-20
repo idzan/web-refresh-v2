@@ -1,5 +1,10 @@
 @import "vars";
 // Basics
+:root {
+    :focus {
+        outline: solid 1px $primary;
+    }
+}
 html {
     background: $bg;
     color: $primary;
@@ -40,10 +45,16 @@ nav {
     .item {
         margin: 1rem;
         padding: .25rem;
-        color: $bg;
+        color: $primary;
         text-transform: uppercase;
         text-decoration: none;
-        border-bottom: 1px solid $bg;
+        &:hover {
+            border-bottom: 1px solid $primary;
+            transition: border-bottom ease-in 1s;
+        }
+        &:active {
+            border-bottom: 1px solid $primary;
+        }
     }
 }
 .logo {
@@ -102,7 +113,7 @@ footer {
         padding: 1em;
         text-transform: uppercase;
         text-decoration: none;
-        color: $bg;
+        color: $primary;
     }
 }
 .copyright {
@@ -149,9 +160,32 @@ footer {
 }
 // Dark Mode
 @media (prefers-color-scheme: dark) {
+    :root {
+        :focus {
+            outline: solid 1px $primarydark;
+        }
+    }
     html {
         background: $bgdark;
         color: $primarydark;
+    }
+    nav {
+        .item {
+            color: $primarydark;
+            border-bottom: 1px solid $primarydark;
+            &:hover {
+                border-bottom: 1px solid $primarydark;
+                transition: border-bottom ease-in 1s;
+            }
+            &:active {
+                border-bottom: 1px solid $primarydark;
+            }
+        }
+    }
+    .legal {
+        a {
+            color: $primarydark;
+        }
     }
     @media only screen and (max-width: 1025px) {
         .menu {

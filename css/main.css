@@ -1,3 +1,7 @@
+:root :focus {
+  outline: solid 1px #222831;
+}
+
 html {
   background: #eee;
   color: #222831;
@@ -50,10 +54,19 @@ nav {
 nav .item {
   margin: 1rem;
   padding: .25rem;
-  color: #eee;
+  color: #222831;
   text-transform: uppercase;
   text-decoration: none;
-  border-bottom: 1px solid #eee;
+}
+
+nav .item:hover {
+  border-bottom: 1px solid #222831;
+  -webkit-transition: border-bottom ease-in 1s;
+  transition: border-bottom ease-in 1s;
+}
+
+nav .item:active {
+  border-bottom: 1px solid #222831;
 }
 
 .logo {
@@ -152,7 +165,7 @@ footer {
   padding: 1em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #eee;
+  color: #222831;
 }
 
 .copyright {
@@ -225,8 +238,26 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
+  :root :focus {
+    outline: solid 1px #eee;
+  }
   html {
     background: #222831;
+    color: #eee;
+  }
+  nav .item {
+    color: #eee;
+    border-bottom: 1px solid #eee;
+  }
+  nav .item:hover {
+    border-bottom: 1px solid #eee;
+    -webkit-transition: border-bottom ease-in 1s;
+    transition: border-bottom ease-in 1s;
+  }
+  nav .item:active {
+    border-bottom: 1px solid #eee;
+  }
+  .legal a {
     color: #eee;
   }
 }
