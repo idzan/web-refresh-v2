@@ -15,7 +15,11 @@ body {
         "header"
         "main"
         "footer";
-    
+    font-size: 1em;
+}
+// Fonts
+h1 {
+    text-transform: uppercase;
 }
 // Navigation
 header {
@@ -36,6 +40,10 @@ nav {
     .item {
         margin: 1rem;
         padding: .25rem;
+        color: $bg;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: 1px solid $bg;
     }
 }
 .logo {
@@ -93,6 +101,8 @@ footer {
     a {
         padding: 1em;
         text-transform: uppercase;
+        text-decoration: none;
+        color: $bg;
     }
 }
 .copyright {
