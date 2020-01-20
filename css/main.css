@@ -2,6 +2,16 @@
   outline: solid 1px #222831;
 }
 
+::-moz-selection {
+  background: #343e49;
+  color: #eee;
+}
+
+::selection {
+  background: #343e49;
+  color: #eee;
+}
+
 html {
   background: #eee;
   color: #222831;
@@ -251,6 +261,14 @@ hr {
 @media (prefers-color-scheme: dark) {
   :root :focus {
     outline: solid 1px #eee;
+  }
+  ::-moz-selection {
+    background: #2c4a6b;
+    color: #eee;
+  }
+  ::selection {
+    background: #2c4a6b;
+    color: #eee;
   }
   html {
     background: #222831;

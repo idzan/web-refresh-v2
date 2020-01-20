@@ -5,6 +5,10 @@
         outline: solid 1px $primary;
     }
 }
+::selection {
+    background: $secondary;
+    color: $bg;
+}
 html {
     background: $bg;
     color: $primary;
@@ -169,48 +173,7 @@ hr {
     margin: 1.5em 0;
     color: $primary;
 }
-// Dark Mode
-@media (prefers-color-scheme: dark) {
-    // Basics
-    :root {
-        :focus {
-            outline: solid 1px $primarydark;
-        }
-    }
-    html {
-        background: $bgdark;
-        color: $primarydark;
-    }
-    // Navigation
-    nav {
-        .item {
-            color: $primarydark;
-            border-bottom: 1px solid $primarydark;
-            &:hover {
-                border-bottom: 1px solid $primarydark;
-                transition: border-bottom ease-in 1s;
-            }
-            &:active {
-                border-bottom: 1px solid $primarydark;
-            }
-        }
-    }
-    // Footer navigation
-    .legal {
-        a {
-            color: $primarydark;
-        }
-    }
-    // Spacing
-    hr {
-        color: $primarydark;
-    }
-    // Menu icon inverted
-    @media only screen and (max-width: 1025px) {
-        .menu {
-            filter: invert(100%);
-        }
-    }
-}
+// Dark Mode Imports
+@import "dark";
 // Cookie Consent & Others
 @import "utils";
