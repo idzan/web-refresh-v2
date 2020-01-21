@@ -1,3 +1,4 @@
+@import "vars";
 // Dark Mode
 @media (prefers-color-scheme: dark) {
     // Basics
@@ -43,5 +44,24 @@
         .menu {
             filter: invert(100%);
         }
+    }
+    // Social Media Icons
+    .facebook {
+        fill: $darkicons;
+    }
+    .twitter {
+        fill: $twitterdark;
+    }
+    .linkedin {
+        fill: $linkedindark;
+    }
+    .youtube {
+        fill: $darkicons;
+    }
+    .instagram {
+        fill: $darkicons;
+    }
+    .github {
+        fill: $githubdark;
     }
 }

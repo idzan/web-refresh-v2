@@ -197,8 +197,9 @@ footer {
   text-align: center;
 }
 
-.social img {
-  width: .75em;
+.social .icon {
+  width: 1em;
+  height: 1em;
   padding: 0.5em;
 }
 
@@ -276,9 +277,30 @@ hr {
   color: #222831;
 }
 
-/* .facebook {
-    fill: $facebook;
-} */
+.facebook {
+  fill: #3b5998;
+}
+
+.twitter {
+  fill: #1da1f2;
+}
+
+.linkedin {
+  fill: #0077b5;
+}
+
+.youtube {
+  fill: #ff0000;
+}
+
+.instagram {
+  fill: #e1306c;
+}
+
+.github {
+  fill: #333;
+}
+
 @media (prefers-color-scheme: dark) {
   :root :focus {
     outline: solid 1px #eee;
@@ -319,6 +341,27 @@ hr {
   .menu {
     -webkit-filter: invert(100%);
             filter: invert(100%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .facebook {
+    fill: #eee;
+  }
+  .twitter {
+    fill: #e1e8ed;
+  }
+  .linkedin {
+    fill: #caccce;
+  }
+  .youtube {
+    fill: #eee;
+  }
+  .instagram {
+    fill: #eee;
+  }
+  .github {
+    fill: #f5f5f5;
   }
 }
 

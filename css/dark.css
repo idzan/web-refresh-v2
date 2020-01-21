@@ -1,0 +1,63 @@
+@media (prefers-color-scheme: dark) {
+  :root :focus {
+    outline: solid 1px #eee;
+  }
+  ::-moz-selection {
+    background: #2c4a6b;
+    color: #eee;
+  }
+  ::selection {
+    background: #2c4a6b;
+    color: #eee;
+  }
+  html {
+    background: #222831;
+    color: #eee;
+  }
+  nav .item {
+    color: #eee;
+    border-bottom: 1px solid #eee;
+  }
+  nav .item:hover {
+    border-bottom: 1px solid #eee;
+    -webkit-transition: border-bottom ease-in 1s;
+    transition: border-bottom ease-in 1s;
+  }
+  nav .item:active {
+    border-bottom: 1px solid #eee;
+  }
+  .legal a {
+    color: #eee;
+  }
+  hr {
+    color: #eee;
+  }
+}
+
+@media only screen and (prefers-color-scheme: dark) and (max-width: 1025px) {
+  .menu {
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .facebook {
+    fill: #eee;
+  }
+  .twitter {
+    fill: #e1e8ed;
+  }
+  .linkedin {
+    fill: #caccce;
+  }
+  .youtube {
+    fill: #eee;
+  }
+  .instagram {
+    fill: #eee;
+  }
+  .github {
+    fill: #f5f5f5;
+  }
+}
