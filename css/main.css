@@ -162,9 +162,9 @@ footer {
   grid-area: footer;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "legal copyright";
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "legal social copyright";
   margin: 1.5em;
 }
 
@@ -184,9 +184,27 @@ footer {
   color: #222831;
 }
 
-.copyright {
+.social {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
+  grid-area: social;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.social img {
+  width: .75em;
+  padding: 0.5em;
+}
+
+.copyright {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: copyright;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -258,6 +276,9 @@ hr {
   color: #222831;
 }
 
+/* .facebook {
+    fill: $facebook;
+} */
 @media (prefers-color-scheme: dark) {
   :root :focus {
     outline: solid 1px #eee;

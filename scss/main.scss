@@ -112,8 +112,8 @@ section {
 footer {
     grid-area: footer;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "legal copyright";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "legal social copyright";
     margin: 1.5em;
 }
 .legal {
@@ -124,6 +124,16 @@ footer {
         text-transform: uppercase;
         text-decoration: none;
         color: $primary;
+    }
+}
+.social {
+    grid-area: social;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    img {
+        width: .75em;
+        padding: 0.5em;
     }
 }
 .copyright {
@@ -173,6 +183,10 @@ hr {
     margin: 1.5em 0;
     color: $primary;
 }
+// Social Media Icons
+/* .facebook {
+    fill: $facebook;
+} */
 // Dark Mode Imports
 @import "dark";
 // Cookie Consent & Others
