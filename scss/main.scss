@@ -112,7 +112,7 @@ section {
 footer {
     grid-area: footer;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr .75fr 1fr;
     grid-template-areas: "legal social copyright";
     margin: 1.5em;
 }
