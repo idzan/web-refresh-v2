@@ -16,15 +16,21 @@
   }
   nav .item {
     color: #eee;
-    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#eee));
+    background-image: linear-gradient(#eee, #eee);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 0% 2px;
+    -webkit-transition: background-size 500ms ease-in-out;
+    transition: background-size 500ms ease-in-out;
   }
   nav .item:hover {
-    border-bottom: 1px solid #eee;
-    -webkit-transition: border-bottom ease-in 1s;
-    transition: border-bottom ease-in 1s;
+    background-size: 100% 2px;
   }
   nav .item:active {
-    border-bottom: 1px solid #eee;
+    border-bottom: 2px solid #eee;
   }
   .legal a {
     color: #eee;

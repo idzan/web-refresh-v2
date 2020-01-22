@@ -19,13 +19,18 @@
     nav {
         .item {
             color: $primarydark;
-            border-bottom: 1px solid $primarydark;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-image: linear-gradient($primarydark, $primarydark);
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            background-size: 0% 2px;
+            transition: background-size 500ms ease-in-out;
             &:hover {
-                border-bottom: 1px solid $primarydark;
-                transition: border-bottom ease-in 1s;
+                background-size: 100% 2px;
             }
             &:active {
-                border-bottom: 1px solid $primarydark;
+                border-bottom: 2px solid $primarydark;
             }
         }
     }
