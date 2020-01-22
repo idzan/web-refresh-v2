@@ -36,6 +36,10 @@ h1 {
   text-transform: uppercase;
 }
 
+strong {
+  font-weight: 600;
+}
+
 header {
   width: 100%;
   padding: 0.5em 0;
@@ -282,6 +286,13 @@ hr {
   color: #222831;
 }
 
+.star {
+  width: 1em;
+  height: 1em;
+  fill: #222831;
+  padding-left: 1em;
+}
+
 .facebook {
   fill: #3b5998;
 }
@@ -356,6 +367,9 @@ hr {
 }
 
 @media (prefers-color-scheme: dark) {
+  .star {
+    fill: #eee;
+  }
   .facebook {
     fill: #eee;
   }

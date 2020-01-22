@@ -48,6 +48,9 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  .star {
+    fill: #eee;
+  }
   .facebook {
     fill: #eee;
   }

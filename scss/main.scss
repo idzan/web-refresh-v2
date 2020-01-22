@@ -31,6 +31,9 @@ body {
 h1 {
     text-transform: uppercase;
 }
+strong {
+    font-weight: 600;
+}
 // Navigation
 header {
     width: 100%;
@@ -188,7 +191,14 @@ hr {
     margin: 1.5em 0;
     color: $primary;
 }
-// Social Media Icons
+// Star Icon
+.star {
+    width: 1em;
+    height: 1em;
+    fill: $primary;
+    padding-left: 1em;
+}
+// Social Media and Contact Icons
 .facebook {
     fill: $facebook;
 }
