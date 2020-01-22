@@ -197,6 +197,11 @@ footer {
   text-align: center;
 }
 
+.social a {
+  text-decoration: none;
+  padding: 0.5em;
+}
+
 .social .icon {
   width: 1em;
   height: 1em;
