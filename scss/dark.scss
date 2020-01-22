@@ -15,6 +15,22 @@
         background: $bgdark;
         color: $primarydark;
     }
+    // Links
+    a {
+        color: $linksdark;
+        text-decoration: none;
+        background-image: linear-gradient($primarydark, $primarydark);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: 0% 2px;
+        transition: background-size 500ms ease-in-out;
+        &:hover {
+            background-size: 100% 2px;
+        }
+        &:visited {
+            color: $secondarydark;
+        }
+    }
     // Navigation
     nav {
         .item {
@@ -53,6 +69,19 @@
     // Star Icon
     .star {
         fill: $primarydark;
+    }
+    // Contact Icons
+    .contact {
+        fill: $primarydark;
+        .whatsapp {
+            fill: $whatsappdark;
+        }
+        .viber {
+            fill: $viberdark;
+        }
+        .discord {
+            fill: $discorddark;
+        }
     }
     // Social Media Icons
     .facebook {

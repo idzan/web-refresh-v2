@@ -34,6 +34,21 @@ h1 {
 strong {
     font-weight: 600;
 }
+a {
+    color: $links;
+    text-decoration: none;
+    background-image: linear-gradient($primary, $primary);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 0% 2px;
+    transition: background-size 500ms ease-in-out;
+    &:hover {
+        background-size: 100% 2px;
+    }
+    &:visited {
+        color: $linksvisited;
+    }
+}
 // Navigation
 header {
     width: 100%;
@@ -198,7 +213,23 @@ hr {
     fill: $primary;
     padding-left: 1em;
 }
-// Social Media and Contact Icons
+// Contact Icons
+.contact {
+    width: 1em;
+    height: 1em;
+    padding-right: 1em;
+    fill: $primary;
+    .whatsapp {
+        fill: $whatsapp;
+    }
+    .viber {
+        fill: $viber;
+    }
+    .discord {
+        fill: $discord;
+    }
+}
+// Social Media Icons
 .facebook {
     fill: $facebook;
 }

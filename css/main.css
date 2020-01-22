@@ -40,6 +40,26 @@ strong {
   font-weight: 600;
 }
 
+a {
+  color: #08759a;
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#222831), to(#222831));
+  background-image: linear-gradient(#222831, #222831);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0% 2px;
+  -webkit-transition: background-size 500ms ease-in-out;
+  transition: background-size 500ms ease-in-out;
+}
+
+a:hover {
+  background-size: 100% 2px;
+}
+
+a:visited {
+  color: #13566d;
+}
+
 header {
   width: 100%;
   padding: 0.5em 0;
@@ -293,6 +313,25 @@ hr {
   padding-left: 1em;
 }
 
+.contact {
+  width: 1em;
+  height: 1em;
+  padding-right: 1em;
+  fill: #222831;
+}
+
+.contact .whatsapp {
+  fill: #075e54;
+}
+
+.contact .viber {
+  fill: #59267c;
+}
+
+.contact .discord {
+  fill: #7289da;
+}
+
 .facebook {
   fill: #3b5998;
 }
@@ -333,6 +372,23 @@ hr {
     background: #222831;
     color: #eee;
   }
+  a {
+    color: #eee;
+    text-decoration: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#eee));
+    background-image: linear-gradient(#eee, #eee);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 0% 2px;
+    -webkit-transition: background-size 500ms ease-in-out;
+    transition: background-size 500ms ease-in-out;
+  }
+  a:hover {
+    background-size: 100% 2px;
+  }
+  a:visited {
+    color: #2c4a6b;
+  }
   nav .item {
     color: #eee;
     text-decoration: none;
@@ -369,6 +425,18 @@ hr {
 @media (prefers-color-scheme: dark) {
   .star {
     fill: #eee;
+  }
+  .contact {
+    fill: #eee;
+  }
+  .contact .whatsapp {
+    fill: #dcf8c6;
+  }
+  .contact .viber {
+    fill: #e2d4e7;
+  }
+  .contact .discord {
+    fill: #99aab5;
   }
   .facebook {
     fill: #eee;
