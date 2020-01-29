@@ -1,20 +1,20 @@
 :root :focus {
-  outline: solid 1px #222831;
+  outline: solid 1px #202731;
 }
 
 ::-moz-selection {
-  background: #343e49;
+  background: #393d46;
   color: #eee;
 }
 
 ::selection {
-  background: #343e49;
+  background: #393d46;
   color: #eee;
 }
 
 html {
   background: #eee;
-  color: #222831;
+  color: #202731;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   scroll-behavior: smooth;
 }
@@ -43,8 +43,8 @@ strong {
 a {
   color: #08759a;
   text-decoration: none;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#222831), to(#222831));
-  background-image: linear-gradient(#222831, #222831);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#202731), to(#202731));
+  background-image: linear-gradient(#202731, #202731);
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: 0% 2px;
@@ -89,11 +89,11 @@ nav {
 nav .item {
   margin: 1em;
   padding: .25em;
-  color: #222831;
+  color: #202731;
   text-transform: uppercase;
   text-decoration: none;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#222831), to(#222831));
-  background-image: linear-gradient(#222831, #222831);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#202731), to(#202731));
+  background-image: linear-gradient(#202731, #202731);
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: 0% 2px;
@@ -106,7 +106,7 @@ nav .item:hover {
 }
 
 nav .item:active {
-  border-bottom: 2px solid #222831;
+  border-bottom: 2px solid #202731;
 }
 
 .logo {
@@ -205,7 +205,7 @@ footer {
   padding: 1rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: #222831;
+  color: #202731;
 }
 
 .social {
@@ -312,13 +312,13 @@ footer {
 
 hr {
   margin: 1.5em 0;
-  color: #222831;
+  color: #202731;
 }
 
 .star {
   width: 1em;
   height: 1em;
-  fill: #222831;
+  fill: #202731;
   padding-left: 1em;
 }
 
@@ -326,7 +326,7 @@ hr {
   width: 1em;
   height: 1em;
   padding-right: 1em;
-  fill: #222831;
+  fill: #202731;
 }
 
 .contact .whatsapp {
@@ -378,7 +378,7 @@ hr {
     color: #eee;
   }
   html {
-    background: #222831;
+    background: #202731;
     color: #eee;
   }
   a {

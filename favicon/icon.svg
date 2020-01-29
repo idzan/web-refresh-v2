@@ -2,7 +2,7 @@
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1200px" height="1200px" viewBox="0 0 12000 12000" preserveAspectRatio="xMidYMid meet">
 <style>
     #layer101 {
-        fill: #393d46;
+        fill: #202731;
         stroke: none;
     }
     #layer102 {
@@ -19,11 +19,11 @@
             stroke: none;
         }
         #layer102 {
-            fill: #393d46;
+            fill: #202731;
             stroke:none;
         }
         #layer103 {
-            fill: #393d46;
+            fill: #202731;
             stroke: none;
         }
 }
