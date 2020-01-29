@@ -126,6 +126,7 @@ nav .item:active {
       -ms-grid-row-align: center;
       align-self: center;
   width: 1em;
+  fill: #202731;
 }
 
 @media only screen and (max-width: 1025px) {
@@ -298,6 +299,10 @@ footer {
   text-decoration: none;
 }
 
+.cta:visited {
+  color: #eee;
+}
+
 .portfolio {
   display: -ms-grid;
   display: grid;
@@ -415,6 +420,9 @@ hr {
   }
   nav .item:active {
     border-bottom: 2px solid #eee;
+  }
+  .menu {
+    fill: #eee;
   }
   .legal a {
     color: #eee;

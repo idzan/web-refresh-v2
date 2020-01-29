@@ -49,6 +49,9 @@
   nav .item:active {
     border-bottom: 2px solid #eee;
   }
+  .menu {
+    fill: #eee;
+  }
   .legal a {
     color: #eee;
   }
