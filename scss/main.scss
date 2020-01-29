@@ -37,14 +37,6 @@ strong {
 a {
     color: $links;
     text-decoration: none;
-    background-image: linear-gradient($primary, $primary);
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: 0% 2px;
-    transition: background-size 500ms ease-in-out;
-    &:hover {
-        background-size: 100% 2px;
-    }
     &:visited {
         color: $linksvisited;
     }
@@ -101,11 +93,15 @@ nav {
 @media only screen and (max-width: 1025px) {
     .menu { display: inline-block; }
     nav { display: none; }
-    .logo {display: none;}
+    .logo {
+        display: grid; 
+        grid-row: 1; 
+        grid-column: 1;
+    }
     #nav-switch {
         &:checked ~ nav {
             display: grid;
-            grid-row: 2;
+            grid-row: 3;
             grid-column: 2;
             align-self: center;
         }
@@ -143,6 +139,14 @@ footer {
         text-transform: uppercase;
         text-decoration: none;
         color: $primary;
+    }
+}
+@media only screen and (max-width: 1025px) {
+    .legal {
+        a {
+            display: inline-flex;
+            padding: .75rem;
+        }
     }
 }
 .social {
