@@ -2,6 +2,7 @@
 var klaroConfig = {
     elementID: 'klaro',
     klaroStorage: 'localStorage',
+    //klaroStorage: 'cookies',
     cookieName: 'idzanWeb',
     cookieExpiresAfterDays: 120,
     privacyPolicy: '/privacy.html',
