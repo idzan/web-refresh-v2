@@ -62,8 +62,8 @@
     <footer>
         <div class="legal">
             <a href="privacy.html">Privacy Policy</a>
-            <a href="cookies.html">Cookie Policy</a>
             <a href="terms.html">Terms of Service</a>
+            <a onclick="return klaro.show();">Change Cookie Settings</a>
         </div>
         <div class="social">
             <a href="https://www.facebook.com/Idzan.Marko.Official" target="_blank" rel="noopener noreferrer">
@@ -101,8 +101,15 @@
             <p>Copyright &copy; 2010 - 2020 by Marko Idzan <br> All Rights Reserved.</p>
         </div>
     </footer>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47485892-14"></script>
-    <script src="js/external/cookieconsent.min.js"></script>
-    <script src="js/analytics.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/klaro.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async type="opt-in" data-type="application/javascript" data-name="googleAnayltics" data-src="https://www.googletagmanager.com/gtag/js?id=UA-47485892-14"></script>
+    <script type="opt-in" data-name="googleAnalytics" data-type="application/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-47485892-14');
+    </script>
 </body>
 </html>
