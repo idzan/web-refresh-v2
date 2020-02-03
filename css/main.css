@@ -162,8 +162,8 @@ main {
 h1 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 2 / 1 /3;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 2 / 1 / 4;
 }
 
 section {
@@ -315,7 +315,23 @@ footer {
 }
 
 .portfolio .project img {
-  width: 90%;
+  max-width: 100%;
+}
+
+.single-project {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(4.5em, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(4.5em, 1fr));
+  gap: 1em;
+}
+
+.single-project img {
+  max-width: 100%;
+}
+
+.details p strong {
+  text-transform: uppercase;
 }
 
 hr {
