@@ -213,6 +213,7 @@ footer {
     gap: 1em;
     .project {
         img {
+            width: 100%;
             max-width: 100%;
         }
     }
@@ -222,6 +223,7 @@ footer {
     grid-template-columns:repeat(auto-fit, minmax(4.5em, 1fr));
     gap: 1em;
     img {
+        width: 100%;
         max-width: 100%;
     }
 }
