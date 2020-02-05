@@ -51,6 +51,29 @@
             color: $primarydark;
         }
     }
+    // Project
+    .details {
+        p {
+            font-size: 1em;
+            .icon {
+                width: 1em;
+                height: 1em;
+                fill: $primarydark;
+            }
+            a {
+                text-decoration: none;
+                background-image: linear-gradient($primarydark, $primarydark);
+                background-repeat: no-repeat;
+                background-position: bottom left;
+                background-size: 0% 2px;
+                transition: background-size 500ms ease-in-out;
+                &:hover {
+                    background-size: 100% 2px;
+    
+                }
+            }
+        }
+    }
     // Spacing
     hr {
         color: $primarydark;

@@ -227,10 +227,35 @@ footer {
 }
 .details {
     p {
+        font-size: 1em;
         strong {
             text-transform: uppercase;
         }
+        .icon {
+            width: 1em;
+            height: 1em;
+            fill: $primary;
+        }
+        a {
+            text-decoration: none;
+            background-image: linear-gradient($primary, $primary);
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            background-size: 0% 2px;
+            transition: background-size 500ms ease-in-out;
+            &:hover {
+                background-size: 100% 2px;
+    
+            }
+            &::after {
+                content: url("/svg/external.svg");
+                display: inline-block;
+                width: 1em;
+                fill: $primary;
+            }
+        }
     }
+    
 }
 // Content Spacing
 hr {
