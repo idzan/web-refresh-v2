@@ -73,8 +73,7 @@
 
 @media only screen and (prefers-color-scheme: dark) and (max-width: 1025px) {
   .menu {
-    -webkit-filter: invert(100%);
-            filter: invert(100%);
+    fill: #eee;
   }
 }
 

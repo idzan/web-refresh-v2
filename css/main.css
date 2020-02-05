@@ -115,6 +115,7 @@ nav .item:active {
       -ms-grid-row-align: center;
       align-self: center;
   width: 1em;
+  height: 1em;
   fill: #202731;
 }
 
