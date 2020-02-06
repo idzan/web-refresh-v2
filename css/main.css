@@ -362,13 +362,6 @@ footer {
   background-size: 100% 2px;
 }
 
-.details p a::after {
-  content: url("/svg/external.svg");
-  display: inline-block;
-  width: 1em;
-  fill: #202731;
-}
-
 hr {
   margin: 1.5em 0;
   color: #202731;
@@ -499,8 +492,7 @@ hr {
 
 @media only screen and (prefers-color-scheme: dark) and (max-width: 1025px) {
   .menu {
-    -webkit-filter: invert(100%);
-            filter: invert(100%);
+    fill: #eee;
   }
 }
 

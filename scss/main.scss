@@ -250,12 +250,6 @@ footer {
                 background-size: 100% 2px;
     
             }
-            &::after {
-                content: url("/svg/external.svg");
-                display: inline-block;
-                width: 1em;
-                fill: $primary;
-            }
         }
     }
     
