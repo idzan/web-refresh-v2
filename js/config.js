@@ -38,16 +38,11 @@ var klaroConfig = {
             title: 'Google Analytics',
             purposes: ['analytics'],
             cookies: [
-                ['_ga', '_gat_gtag_UA_47485892_14', '_gid']
+                [/^_g.*$/, "/", "idzan.eu"]
             ],
             required: false,
             optOut: false,
             onlyOnce: false,
-        },
-        {
-            name: 'googleFonts',
-            title: 'Google Fonts',
-            purposes: ['styling'],
         },
         {
             name: 'cloudflare',
