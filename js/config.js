@@ -43,6 +43,11 @@ var klaroConfig = {
             required: false,
             optOut: false,
             onlyOnce: false,
+            callback: function (state,app) {
+                if(state !== false) {
+                    dataLayer.push({'event':'load-analytics'});
+                }
+            }
         },
         {
             name: 'cloudflare',
