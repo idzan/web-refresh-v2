@@ -1,11 +1,14 @@
+# Rewrite Rules
 <IfModule mod_rewrite.c>
-  ## RewriteCond %{SERVER_PORT} !^443$ ##
-  ## RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] ##
+  # RewriteCond %{SERVER_PORT} !^443$
+  # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 	RewriteEngine on
+  # Remove .html from end of files
 	RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 	RewriteRule ^ /%1 [NC,L,R]
 	RewriteCond %{REQUEST_FILENAME}.html -f
 	RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+  # Support WebP by default when can load jpg or png
 	RewriteCond %{HTTP_ACCEPT} image/webp
 	RewriteCond %{DOCUMENT_ROOT}/$1.webp -f
 	RewriteRule (.+)\.(jpe?g|png)$ $1.webp [T=image/webp]
@@ -19,27 +22,33 @@
   Header append Vary Accept env=REQUEST_image
 </IfModule>
 
+# Support woff2, woff and webp formats
 <IfModule mod_mime.c>
+  AddType font/x-woff .woff
+  AddType application/x-font-woff2 .woff2
   AddType image/webp .webp
 </IfModule>
 
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
-ExpiresActive On
-ExpiresByType image/jpg "access 1 year"
-ExpiresByType image/jpeg "access 1 year"
-ExpiresByType image/gif "access 1 year"
-ExpiresByType image/png "access 1 year"
-ExpiresByType image/svg+xml "access plus 1 year"
-ExpiresByType image/x-icon "access 1 year"
-ExpiresByType image/webp "access plus 1 year"
-ExpiresByType text/css "access 1 month"
-ExpiresByType application/pdf "access 1 month"
-ExpiresByType application/javascript "access 1 month"
-ExpiresByType application/x-javascript "access 1 month"
-ExpiresByType application/x-shockwave-flash "access 1 month"
-ExpiresByType text/javascript "access plus 1 month"
-ExpiresDefault "access 2 days"
+  ExpiresActive On
+  ExpiresByType image/jpg                             "access 1 year"
+  ExpiresByType image/jpeg                            "access 1 year"
+  ExpiresByType image/gif                             "access 1 year"
+  ExpiresByType image/png                             "access 1 year"
+  ExpiresByType image/svg+xml                         "access plus 1 year"
+  ExpiresByType image/x-icon                          "access 1 year"
+  ExpiresByType image/webp                            "access plus 1 year"
+  ExpiresByType text/css                              "access 1 month"
+  ExpiresByType application/javascript                "access 1 month"
+  ExpiresByType application/x-javascript              "access 1 month"
+  ExpiresByType text/javascript                       "access plus 1 month"
+  ExpiresDefault                                      "access 2 days"
+  ExpiresByType application/font-woff                 "access plus 1 month"
+  ExpiresByType application/x-font-woff               "access plus 1 month"
+  ExpiresByType font/woff                             "access plus 1 month"
+  ExpiresByType application/font-woff2                "access plus 1 month"
+  ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
 </IfModule>
 ## EXPIRES CACHING ##
 

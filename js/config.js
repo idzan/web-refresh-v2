@@ -50,11 +50,6 @@ var klaroConfig = {
             }
         },
         {
-            name: 'googleFonts',
-            title: 'Google Fonts',
-            purposes: ['styling']
-        },
-        {
             name: 'cloudflare',
             title: 'Cloudflare',
             purposes: ['security'],
