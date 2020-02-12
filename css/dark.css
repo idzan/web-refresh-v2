@@ -1,3 +1,19 @@
+/* source-sans-pro-regular - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"), url("../fonts/source-sans-pro.woff2") format("woff2"), url("../fonts/source-sans-pro.woff") format("woff");
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/open-sans.woff2") format("woff2"), url("../fonts/open-sans.woff") format("woff");
+}
+
 @media (prefers-color-scheme: dark) {
   :root :focus {
     outline: solid 1px #eee;
@@ -39,8 +55,8 @@
   nav .item:active {
     border-bottom: 2px solid #eee;
   }
-  .menu {
-    fill: #eee;
+  .menu span, .menu span:before, .menu span:after {
+    background: #eee;
   }
   .legal a {
     color: #eee;

@@ -1,3 +1,24 @@
+/* source-sans-pro-regular - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"), url("../fonts/source-sans-pro.woff2") format("woff2"), url("../fonts/source-sans-pro.woff") format("woff");
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/open-sans.woff2") format("woff2"), url("../fonts/open-sans.woff") format("woff");
+}
+
+*:before, *:after {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
 :root :focus {
   outline: solid 1px #202731;
 }
@@ -106,7 +127,7 @@ nav .item:active {
   width: 10vw;
 }
 
-#nav-switch, .menu {
+#nav-switch, .menu, .menu-check {
   display: none;
 }
 
@@ -118,7 +139,55 @@ nav .item:active {
       align-self: center;
   width: 1em;
   height: 1em;
-  fill: #202731;
+  cursor: pointer;
+}
+
+.menu span, .menu span:before, .menu span:after {
+  position: absolute;
+  width: 2em;
+  height: 4px;
+  background: #202731;
+  border-radius: .2em;
+}
+
+.menu span {
+  margin: .25em;
+}
+
+.menu span:after, .menu span:before {
+  content: '';
+  left: 0;
+}
+
+.menu span:before {
+  top: -8px;
+}
+
+.menu span:after {
+  top: 8px;
+}
+
+.menu-check:checked + .menu:after {
+  content: '';
+}
+
+.menu-check:checked + .menu span {
+  height: 0;
+  width: 0;
+}
+
+.menu-check:checked + .menu span:before, .menu-check:checked + .menu span:after {
+  top: 6px;
+}
+
+.menu-check:checked + .menu span:before {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+.menu-check:checked + .menu span:after {
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
 }
 
 @media only screen and (max-width: 1025px) {
@@ -419,6 +488,22 @@ hr {
   fill: #333;
 }
 
+/* source-sans-pro-regular - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"), url("../fonts/source-sans-pro.woff2") format("woff2"), url("../fonts/source-sans-pro.woff") format("woff");
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/open-sans.woff2") format("woff2"), url("../fonts/open-sans.woff") format("woff");
+}
+
 @media (prefers-color-scheme: dark) {
   :root :focus {
     outline: solid 1px #eee;
@@ -460,8 +545,8 @@ hr {
   nav .item:active {
     border-bottom: 2px solid #eee;
   }
-  .menu {
-    fill: #eee;
+  .menu span, .menu span:before, .menu span:after {
+    background: #eee;
   }
   .legal a {
     color: #eee;

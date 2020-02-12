@@ -43,7 +43,9 @@
         }
     }
     .menu {
-        fill: $primarydark;
+        span, span:before, span:after {
+            background: $primarydark;
+        }
     }
     // Footer navigation
     .legal {

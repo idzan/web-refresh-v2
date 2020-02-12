@@ -1,5 +1,10 @@
 @import "vars";
 // Basics
+* {
+    &:before , &:after {
+        transition: all .3s;
+    }
+}
 :root {
     :focus {
         outline: solid 1px $primary;
@@ -83,7 +88,7 @@ nav {
     grid-column: 1;
     width: 10vw;
 }
-#nav-switch, .menu {
+#nav-switch, .menu, .menu-check {
     display: none;
 }
 .menu {
@@ -91,7 +96,47 @@ nav {
     align-self: center;
     width: 1em;
     height: 1em;
-    fill: $primary;
+    cursor: pointer;
+    span, span:before, span:after {
+        position: absolute;
+        width: 2em;
+        height: 4px;
+        background: $primary;
+        border-radius: .2em;
+    }
+    span {
+        margin: .25em;
+        &:after, &:before {
+            content: '';
+            left: 0;
+        }
+        &:before {
+            top: -8px;
+        }
+        &:after {
+            top: 8px;
+        }
+    }
+}
+.menu-check {
+    &:checked + .menu:after {
+        content: '';
+    }
+    &:checked + .menu {
+        span {
+            height: 0;
+            width: 0;
+            &:before, &:after {
+                top: 6px;
+            }
+            &:before {
+                transform: rotate(225deg);
+            }
+            &:after {
+                transform: rotate(-225deg);
+            }
+        }
+    }
 }
 @media only screen and (max-width: 1025px) {
     .menu { display: inline-block; }
