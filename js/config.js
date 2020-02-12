@@ -24,10 +24,14 @@ var klaroConfig = {
             googleFonts: {
                 description: 'Web fonts hosted by Google',
             },
+            darkModeSwitcher: {
+                description: 'Script which uses fallback methods of loading various elements of Web Site on older Browsers and Systems which don\'t support Dark Theme / Dark Mode'
+            },
             purposes: {
                 analytics: 'Analytics',
                 security: 'Security',
                 styling: 'Styling',
+                fallback: 'Fallback of Features',
             },
         },
     },
@@ -48,6 +52,12 @@ var klaroConfig = {
                     dataLayer.push({'event':'load-analytics'});
                 }
             }
+        },
+        {
+            name: 'darkModeSwitcher',
+            title: 'Dark Mode Switcher',
+            purposes: ['fallback'],
+            required: true,
         },
         {
             name: 'cloudflare',
