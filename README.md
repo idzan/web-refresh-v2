@@ -13,4 +13,10 @@
 * CCPA (California Consumer Privacy Act)
 * COPPA (Children's Online Privacy Protection Rule)
 
+### SEO Features
+* OpenGraph Protocol
+* Twitter OpenGraph Card Version
+* JSON-LD (To be added)
+* Meta Tags
+
 Copyright 2020. by @idzan
