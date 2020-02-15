@@ -1,4 +1,3 @@
-/* source-sans-pro-regular - latin */
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
@@ -6,7 +5,6 @@
   src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"), url("../fonts/source-sans-pro.woff2") format("woff2"), url("../fonts/source-sans-pro.woff") format("woff");
 }
 
-/* open-sans-regular - latin */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -386,6 +384,17 @@ footer {
   gap: 1em;
 }
 
+.portfolio .learnmore {
+  padding: .5em;
+  border-radius: .5rem;
+  background: #08759a;
+  color: #eee;
+}
+
+.portfolio .project {
+  margin: .25em;
+}
+
 .portfolio .project img {
   width: 100%;
   max-width: 100%;
@@ -431,6 +440,15 @@ footer {
 
 .details p a:hover {
   background-size: 100% 2px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .single-project {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
 }
 
 hr {
@@ -488,7 +506,6 @@ hr {
   fill: #333;
 }
 
-/* source-sans-pro-regular - latin */
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
@@ -496,7 +513,6 @@ hr {
   src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"), url("../fonts/source-sans-pro.woff2") format("woff2"), url("../fonts/source-sans-pro.woff") format("woff");
 }
 
-/* open-sans-regular - latin */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
