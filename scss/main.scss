@@ -288,9 +288,19 @@ footer {
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(4.5em, 1fr));
     gap: 1em;
+    margin-top: 1em;
     img {
         width: 100%;
         max-width: 100%;
+    }
+}
+.returnback {
+    color: $linksdark;
+    padding: 1em;
+    background: $accent;
+    margin-bottom: 1em;
+    &:visited {
+        color: $linksdark;
     }
 }
 .details {
