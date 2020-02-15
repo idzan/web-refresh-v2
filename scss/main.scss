@@ -82,6 +82,9 @@ nav {
         &:active {
             border-bottom: 2px solid $primary;
         }
+        &[aria-current] {
+            border-bottom: 2px solid $primary;
+        }
     }
 }
 .logo {

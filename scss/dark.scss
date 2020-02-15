@@ -40,6 +40,9 @@
             &:active {
                 border-bottom: 2px solid $primarydark;
             }
+            &[aria-current] {
+                border-bottom: 2px solid $primarydark;
+            }
         }
     }
     .menu {

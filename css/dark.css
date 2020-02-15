@@ -53,6 +53,9 @@
   nav .item:active {
     border-bottom: 2px solid #eee;
   }
+  nav .item[aria-current] {
+    border-bottom: 2px solid #eee;
+  }
   .menu span, .menu span:before, .menu span:after {
     background: #eee;
   }
