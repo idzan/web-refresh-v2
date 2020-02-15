@@ -123,6 +123,7 @@ nav .item:active {
   -ms-grid-column: 1;
   grid-column: 1;
   width: 10vw;
+  margin: .25em;
 }
 
 #nav-switch, .menu, .menu-check {
@@ -202,6 +203,7 @@ nav .item:active {
     grid-row: 1;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin: .25em;
   }
   #nav-switch:checked ~ nav {
     display: -ms-grid;
@@ -374,6 +376,16 @@ footer {
 
 .cta:visited {
   color: #eee;
+}
+
+@media only screen and (max-width: 1025px) {
+  .cta {
+    -ms-grid-columns: subgrid;
+        grid-template-columns: subgrid;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+  }
 }
 
 .portfolio {
