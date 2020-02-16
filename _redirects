@@ -1,5 +1,0 @@
-/index.html /
-/about.html /about
-/projects.html /projects
-/contact.html /contact
-/project/* /project/:splat
