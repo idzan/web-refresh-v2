@@ -12,7 +12,7 @@ function handleDarkMode(e) {
 	}
 	if (darkModeEnabled) {
 		favicon.href = '/favicon/icon-dark.ico';
-		appleTouchIcon.href = '/favicon/apple-touch-dark.png';
+		appleTouchIcon.href = '/favicon/apple-touch-icon-dark.png';
 		androidIcon.href = '/favicon/android-chrome-dark.png';
 	} else {
 		favicon.href = '/favicon/icon.ico';
