@@ -22,8 +22,10 @@ $bg: #eee;
 $primary: #202731;
 $secondary: #393d46;
 $accent: #08759a;
-$links: #08759a;
+$links: #4cb2d4;
 $linksvisited: #13566d;
+$accept: #026928;
+$decline: #BA1E04;
 // Dark Mode Colors
 $bgdark: #202731;
 $primarydark: $bg;
@@ -46,3 +48,7 @@ $viber: #59267c;
 $viberdark: #e2d4e7;
 $discord: #7289da;
 $discorddark: #99aab5;
+// Klaro Specifics
+$box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 5px 5px 10px 0 rgba(0, 0, 0, 0.19);
+$border-radius: .5em;
+$border-dark: 1px solid #555;
