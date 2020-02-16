@@ -19,4 +19,6 @@
 * JSON-LD (To be added)
 * Meta Tags
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c5c327e7-9b81-4025-8dd8-e2e7204db42b/deploy-status)](https://app.netlify.com/sites/idzan/deploys)
+
 Copyright 2020. by @idzan
