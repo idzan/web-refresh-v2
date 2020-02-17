@@ -21,6 +21,9 @@ var klaroConfig = {
             cloudflare: {
                 description: 'Protection against DDoS attacks and our DNS provider (Required)',
             },
+            netlify: {
+                description: 'Protection against DDoS attacks, CDN and Web Hosting Provider (Required)',
+            },
             googleFonts: {
                 description: 'Web fonts hosted by Google',
             },
@@ -30,6 +33,7 @@ var klaroConfig = {
             purposes: {
                 analytics: 'Analytics',
                 security: 'Security',
+                hosting: 'Hosting',
                 styling: 'Styling',
                 fallback: 'Fallback of Features',
             },
@@ -64,6 +68,12 @@ var klaroConfig = {
             title: 'Cloudflare',
             purposes: ['security'],
             cookies: ['_cfduid'],
+            required: true,
+        },
+        {
+            name: 'netlify',
+            title: 'Netlify',
+            purposes: ['security', 'hosting'],
             required: true,
         },
     ],
