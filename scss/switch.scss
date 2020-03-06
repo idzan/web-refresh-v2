@@ -15,6 +15,17 @@
     }
 }
 
+.cm-app-input:checked + .cm-app-label .slider {
+    background-color: $accent;
+}
+
+.cm-app-input.required:checked + .cm-app-label .slider {
+    opacity: 0.8;
+    background-color: $green2;
+    cursor: not-allowed;
+}
+
+
 .slider {
     box-shadow: $box-shadow;
 }
