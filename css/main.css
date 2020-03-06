@@ -534,6 +534,10 @@ hr {
   fill: #333;
 }
 
+.reddit {
+  fill: #ff4500;
+}
+
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
@@ -697,6 +701,16 @@ hr {
   background-color: #08759a;
 }
 
+.klaro .cookie-modal .cm-app-input:checked + .cm-app-label .slider, .klaro .cookie-notice .cm-app-input:checked + .cm-app-label .slider {
+  background-color: #08759a;
+}
+
+.klaro .cookie-modal .cm-app-input.required:checked + .cm-app-label .slider, .klaro .cookie-notice .cm-app-input.required:checked + .cm-app-label .slider {
+  opacity: 0.8;
+  background-color: #026928;
+  cursor: not-allowed;
+}
+
 .klaro .cookie-modal .slider, .klaro .cookie-notice .slider {
   -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 5px 5px 10px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 5px 5px 10px 0 rgba(0, 0, 0, 0.19);
@@ -797,6 +811,11 @@ hr {
   margin-top: 0.7em;
 }
 
+.klaro .cookie-modal .cm-link, .klaro .cookie-notice .cm-link {
+  padding-left: 4px;
+  vertical-align: middle;
+}
+
 .klaro .cookie-modal .cm-btn, .klaro .cookie-notice .cm-btn {
   background: #BA1E04;
   color: #eee;
@@ -804,6 +823,10 @@ hr {
   padding: 6px 10px;
   margin-right: 0.5em;
   border: 0;
+}
+
+.klaro .cookie-modal .cm-btn:disabled, .klaro .cookie-notice .cm-btn:disabled {
+  opacity: 0.5;
 }
 
 .klaro .cookie-modal .cm-btn.cm-btn-sm, .klaro .cookie-notice .cm-btn.cm-btn-sm {
@@ -822,6 +845,12 @@ hr {
 
 .klaro .cookie-modal .cm-btn.cm-btn-info, .klaro .cookie-notice .cm-btn.cm-btn-info {
   background: #08759a;
+}
+
+.klaro .cookie-modal .cm-btn.cm-btn-right, .klaro .cookie-notice .cm-btn.cm-btn-right {
+  float: right;
+  margin-left: 0.5em;
+  margin-right: 0;
 }
 
 .klaro .cookie-modal {
@@ -887,12 +916,26 @@ hr {
   border-top: 1px solid #555;
 }
 
+.klaro .cookie-modal .cm-modal .cm-footer-buttons::before, .klaro .cookie-modal .cm-modal .cm-footer-buttons::after {
+  content: " ";
+  display: table;
+}
+
+.klaro .cookie-modal .cm-modal .cm-footer-buttons::after {
+  clear: both;
+}
+
 .klaro .cookie-modal .cm-modal .cm-footer a.cm-powered-by {
   position: absolute;
   right: 1em;
   color: #202731;
   font-size: 0.8em;
   padding-top: 4px;
+  text-align: center;
+}
+
+.klaro .cookie-modal .cm-modal .cm-footer a.cm-powered-by a {
+  color: #393d46;
 }
 
 .klaro .cookie-modal .cm-modal .cm-header {
