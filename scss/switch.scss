@@ -1,3 +1,4 @@
+@import 'vars';
 /* The switch - the box around the slider */
 .switch {
     position: relative;
@@ -16,7 +17,7 @@
 }
 
 .cm-app-input:checked + .cm-app-label .slider {
-    background-color: #08759a;
+    background-color: $accent;
 }
 
 .cm-app-input.required:checked + .cm-app-label .slider {
