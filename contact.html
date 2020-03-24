@@ -53,7 +53,7 @@
             <p>If you want to contact me you can use contact form, mail linked below or other medias for communication which are linked here.</p>
             <div class="contact-section">
                 <div class="form">
-                    <form method="post" name="contactme" data-netlify="true">
+                    <form method="post" name="contactme" data-netlify-recaptcha="true" data-netlify="true">
                         <fieldset>
                             <label for="name">Your Name: </label>
                             <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
@@ -66,6 +66,7 @@
                             <label for="message">Enter Your Messaage</label>
                             <textarea name="message" id="message" placeholder="Enter Your Message" required></textarea>
                         </fieldset>
+                        <div data-netlify-recaptcha="true"></div>
                         <!-- <label for="name">Your Name: </label>
                         <input type="text" name="name" id="name" placeholder="Enter Your Name">
                         <label for="email">Your E-mail:</label>
