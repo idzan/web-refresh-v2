@@ -165,9 +165,11 @@ main {
     grid-area: main;
     width: 100%;
     display: grid;
+    //grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 5em, repeat(5, 1fr);
+    grid-template-rows: 5em repeat(5, 1fr);
     line-height: 1.5em;
+    //padding: 1em;
 }
 h1 {
     grid-area: 1 / 2 / 1 / 4;
@@ -350,8 +352,17 @@ hr {
 // Contact Form with Netlify
 .contact-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
     gap: 1em;
+}
+fieldset {
+    border: medium none;
+    width: 100%;
+    padding: 1em;
+    margin: .1em;
+}
+input, textarea {
+    width: 90%;
 }
 // Contact Icons
 .contact {

@@ -230,8 +230,8 @@ main {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: 5em, (1fr)[5];
-      grid-template-rows: 5em, repeat(5, 1fr);
+  -ms-grid-rows: 5em (1fr)[5];
+      grid-template-rows: 5em repeat(5, 1fr);
   line-height: 1.5em;
 }
 
@@ -489,6 +489,25 @@ hr {
   height: 1em;
   fill: #202731;
   padding-left: 1em;
+}
+
+.contact-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15em, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  gap: 1em;
+}
+
+fieldset {
+  border: medium none;
+  width: 100%;
+  padding: 1em;
+  margin: .1em;
+}
+
+input, textarea {
+  width: 90%;
 }
 
 .contact {
