@@ -30,6 +30,9 @@ var klaroConfig = {
             darkModeSwitcher: {
                 description: 'Script which uses fallback methods of loading various elements of Web Site on older Browsers and Systems which don\'t support Dark Theme / Dark Mode'
             },
+            googleReCaptchav2: {
+                description: 'Google reCaptcha V2 is used via Netlify to check for Spam Bots',
+            },
             purposes: {
                 analytics: 'Analytics',
                 security: 'Security',
@@ -74,6 +77,12 @@ var klaroConfig = {
             name: 'netlify',
             title: 'Netlify',
             purposes: ['security', 'hosting'],
+            required: true,
+        },
+        {
+            name: 'googleReCaptchav2',
+            title: 'reCaptcha V2',
+            purposes: ['security'],
             required: true,
         },
     ],
