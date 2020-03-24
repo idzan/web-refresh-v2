@@ -347,6 +347,12 @@ hr {
     fill: $primary;
     padding-left: 1em;
 }
+// Contact Form with Netlify
+.contact-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
 // Contact Icons
 .contact {
     width: 1em;
