@@ -50,11 +50,43 @@
     <main>
         <h1>Contact me</h1>
         <section>
-            <p>If you want to contact me you can use mail linked below or other medias for communication which are linked here.</p>
-            <p><svg class="contact"><use xlink:href="/svg/sprite.svg#mail"></use></svg> E-mail: <a href="mailto:marko@idzan.eu">marko(at)idzan.eu</a></p>
+            <p>If you want to contact me you can use contact form, mail linked below or other medias for communication which are linked here.</p>
+            <div class="contact-section">
+                <div class="form">
+                    <form method="post" name="contactme" data-netlify-recaptcha="true" data-netlify="true">
+                        <fieldset>
+                            <label for="name">Your Name: </label>
+                            <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="email">Your E-mail:</label>
+                            <input type="email" name="email" id="email" placeholder="Enter Your E-mail Address" required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="message">Enter Your Messaage</label>
+                            <textarea name="message" id="message" placeholder="Enter Your Message" required></textarea>
+                        </fieldset>
+                        <div data-netlify-recaptcha="true"></div>
+                        <!-- <label for="name">Your Name: </label>
+                        <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                        <label for="email">Your E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter Your E-mail Address">
+                        <label for="message"></label>
+                        <textarea name="message" id="message" placeholder="Enter Your Message"></textarea> -->
+                        <button type="submit">Send Your Message</button>
+                    </form>
+                </div>
+                <div class="mail-social">
+                    <p><svg class="contact"><use xlink:href="/svg/sprite.svg#mail"></use></svg> E-mail: <a href="mailto:marko@idzan.eu">marko(at)idzan.eu</a></p>
+                    <p><svg class="contact"><use xlink:href="/svg/sprite.svg#phone"></use></svg> Phone: +385 (0)92 1996 272 <br><a href="https://web.whatsapp.com/send?phone=+385921996272" target="_blank" rel="noopener noreferrer"><svg class="contact whatsapp"><use xlink:href="/svg/sprite.svg#whatsapp">a</use></svg></a><svg class="contact viber"><use xlink:href="/svg/sprite.svg#viber"></use></svg>Number is available on WhatsApp and Viber</p>
+                    <p><svg class="contact discord"><use xlink:href="/svg/sprite.svg#discord"></use></svg> Discord Server:  <a href="discord.html" target="_blank" rel="noopener noreferrer">Marko Idzan</a></p>
+                    <p><svg class="contact reddit"><use xlink:href="/svg/sprite.svg#reddit"></use></svg> Check out my subreddit:  <a href="https://www.reddit.com/r/MarkoIdzanOfficial/" target="_blank" rel="noopener noreferrer">MarkoIdzanOfficial</a></p>
+                </div>
+            </div>
+            <!-- <p><svg class="contact"><use xlink:href="/svg/sprite.svg#mail"></use></svg> E-mail: <a href="mailto:marko@idzan.eu">marko(at)idzan.eu</a></p>
             <p><svg class="contact"><use xlink:href="/svg/sprite.svg#phone"></use></svg> Phone: +385 (0)92 1996 272 <br><a href="https://web.whatsapp.com/send?phone=+385921996272" target="_blank" rel="noopener noreferrer"><svg class="contact whatsapp"><use xlink:href="/svg/sprite.svg#whatsapp">a</use></svg></a><svg class="contact viber"><use xlink:href="/svg/sprite.svg#viber"></use></svg>Number is available on WhatsApp and Viber</p>
             <p><svg class="contact discord"><use xlink:href="/svg/sprite.svg#discord"></use></svg> Discord Server:  <a href="discord.html" target="_blank" rel="noopener noreferrer">Marko Idzan</a></p>
-            <p><svg class="contact reddit"><use xlink:href="/svg/sprite.svg#reddit"></use></svg> Check out my subreddit:  <a href="https://www.reddit.com/r/MarkoIdzanOfficial/" target="_blank" rel="noopener noreferrer">MarkoIdzanOfficial</a></p>
+            <p><svg class="contact reddit"><use xlink:href="/svg/sprite.svg#reddit"></use></svg> Check out my subreddit:  <a href="https://www.reddit.com/r/MarkoIdzanOfficial/" target="_blank" rel="noopener noreferrer">MarkoIdzanOfficial</a></p> -->
         </section>
     </main>
     <footer>
