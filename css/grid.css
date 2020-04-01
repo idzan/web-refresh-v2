@@ -240,8 +240,8 @@ section {
 .single-project {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(4.5em, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(4.5em, 1fr));
+  -ms-grid-columns: (minmax(20em, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
   gap: 1em;
   margin-top: 1em;
 }

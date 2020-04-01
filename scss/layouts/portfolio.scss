@@ -13,7 +13,7 @@
 }
 .single-project {
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(4.5em, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(20em, 1fr));
     gap: 1em;
     margin-top: 1em;
 }
