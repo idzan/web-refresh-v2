@@ -1,0 +1,46 @@
+:root {
+  --color-mode: "light";
+}
+
+:root :focus {
+  outline: solid 1px var(--color-dark);
+}
+
+::-moz-selection {
+  background: var(--background);
+  color: var(--text-color);
+}
+
+::selection {
+  background: var(--background);
+  color: var(--text-color);
+}
+
+body {
+  background: var(--background);
+  color: var(--text-color);
+  -webkit-transition: background 500ms ease-in-out, color 200ms ease;
+  transition: background 500ms ease-in-out, color 200ms ease;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--color-link-visited);
+}
+
+nav .menu-item {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-dark)), to(var(--color-dark)));
+  background-image: linear-gradient(var(--color-dark), var(--color-dark));
+}
+
+nav[aria-current] {
+  border-bottom: 2px solid var(--color-dark);
+}
+
+.menu span, .menu span:before, .menu span:after {
+  background: var(--color-dark);
+}

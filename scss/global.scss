@@ -16,6 +16,22 @@
     --color-dark-alpha: #{$dark-alpha};
     --color-light: #{$light};
     --color-light-alpha: #{$light-alpha};
+    --color-secondary: #{$secondary};
+    --color-dark-secondary: #{$secondary-dark};
+    --color-link: #{$links};
+
+    --icon-sun: #{$sun};
+    --icon-moon: #{$moon};
+    --icon-sun-filter: #{$sun-filter};
+    --icon-moon-filter: #{$moon-filter};
+
+    --background: #{$light};
+    --text-color: #{$dark};
+    --button-icon: var(--icon-moon);
+    --button-icon-filter: var(--icon-moon-filter);
+    --button-background: var(--color-dark);
+    --button-color: var(--color-light);
+    --border-color: var(--color-dark-alpha);
 }
 
 html {

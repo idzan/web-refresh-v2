@@ -1,0 +1,45 @@
+:root {
+
+    :focus {
+        outline: solid 1px var(--color-dark);
+    }
+
+    --color-mode: "light";
+}
+
+::selection {
+    background: var(--background);
+    color: var(--text-color);
+}
+
+body {
+    background: var(--background);
+    color: var(--text-color);
+    transition: background 500ms ease-in-out, color 200ms ease;
+}
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
+
+    &:visited {
+        color: darken($links, 25%);
+    }
+}
+
+nav {
+    .menu-item {
+        background-image: linear-gradient(var(--color-dark), var(--color-dark));
+    }
+
+    &[aria-current] {
+        border-bottom: 2px solid var(--color-dark);
+    }
+}
+
+.menu {
+    
+    span, span:before, span:after {
+        background: var(--color-dark);
+    }
+}
