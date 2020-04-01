@@ -12,6 +12,11 @@
   src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/open-sans.woff2") format("woff2"), url("../fonts/open-sans.woff") format("woff");
 }
 
+.icon {
+  width: 1em;
+  height: 1em;
+}
+
 *:before, *:after {
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -44,6 +49,11 @@ h1 {
 
 strong {
   font-weight: 600;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
 }
 
 hr {

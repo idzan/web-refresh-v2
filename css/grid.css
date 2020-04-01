@@ -183,12 +183,12 @@ section {
 
 .cover {
   height: 75vh;
+  text-align: center;
 }
 
 .headline {
-  -ms-grid-row: 3;
-  grid-row: 3;
-  text-align: center;
+  -ms-grid-row: 2;
+  grid-row: 2;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -203,5 +203,71 @@ section {
   -ms-grid-column: 2;
   -ms-grid-column-span: 6;
   grid-column: 2 / span 6;
-  text-align: center;
+}
+
+.button {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 6;
+  grid-column: 2 / span 6;
+}
+
+.cta {
+  padding: 1.5em;
+  border-radius: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1em;
+}
+
+.portfolio .learnmore {
+  padding: .5em;
+  border-radius: .5rem;
+}
+
+.portfolio .project {
+  margin: .25em;
+}
+
+.single-project {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(4.5em, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(4.5em, 1fr));
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.returnback {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.details p {
+  font-size: 1em;
+}
+
+.details p strong {
+  text-transform: uppercase;
+}
+
+.details p a {
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0% 2px;
+  -webkit-transition: background-size 500ms ease-in-out;
+  transition: background-size 500ms ease-in-out;
+}
+
+.details p a:hover {
+  background-size: 100% 2px;
 }
