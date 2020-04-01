@@ -49,6 +49,8 @@ nav .menu-item:hover {
 .menu {
   -ms-grid-column: 1;
   grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -123,8 +125,8 @@ nav .menu-item:hover {
   #nav-switch:checked ~ nav {
     display: -ms-grid;
     display: grid;
-    -ms-grid-row: 2;
-    grid-row: 2;
+    -ms-grid-row: 3;
+    grid-row: 3;
     -ms-grid-column: 3;
     grid-column: 3;
     -ms-grid-row-align: center;

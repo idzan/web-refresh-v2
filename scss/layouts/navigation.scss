@@ -39,6 +39,7 @@ nav {
 
 .menu {
     grid-column: 1;
+    grid-row: 2;
     align-self: center;
     width: 1em;
     height: 1em;
@@ -117,7 +118,7 @@ nav {
 
         &:checked ~ nav {
             display: grid;
-            grid-row: 2;
+            grid-row: 3;
             grid-column: 3;
             align-self: center;
         }

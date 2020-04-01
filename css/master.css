@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
@@ -145,6 +146,8 @@ nav .menu-item:hover {
 .menu {
   -ms-grid-column: 1;
   grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -219,8 +222,8 @@ nav .menu-item:hover {
   #nav-switch:checked ~ nav {
     display: -ms-grid;
     display: grid;
-    -ms-grid-row: 2;
-    grid-row: 2;
+    -ms-grid-row: 3;
+    grid-row: 3;
     -ms-grid-column: 3;
     grid-column: 3;
     -ms-grid-row-align: center;
@@ -258,7 +261,7 @@ section {
 }
 
 .cover {
-  height: 75vh;
+  height: 95vh;
   text-align: center;
 }
 
@@ -507,6 +510,38 @@ nav[aria-current] {
 
 .menu span, .menu span:before, .menu span:after {
   background: var(--color-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-mode: "dark";
+  }
+  :root:not([data-user-color-scheme]) {
+    --background: var(--color-dark);
+    --text-color: var(--color-light);
+    --button-icon: var(--icon-sun);
+    --button-icon-filter: var(--icon-sun-filter);
+    --button-background: var(--color-light);
+    --button-color: var(--color-dark);
+    --border-color: var(--color-light-alpha);
+  }
+  a {
+    color: var(--color-link);
+    text-decoration: none;
+  }
+  a:visited {
+    color: #b3deed;
+  }
+}
+
+[data-user-color-scheme="dark"] {
+  --background: var(--color-dark);
+  --text-color: var(--color-light);
+  --button-icon: var(--icon-sun);
+  --button-icon-filter: var(--icon-sun-filter);
+  --button-background: var(--color-light-alpha);
+  --button-color: var(--color-dark);
+  --border-color: var(--color-light-alpha);
 }
 
 .facebook {
@@ -991,4 +1026,52 @@ nav[aria-current] {
   .klaro .cookie-notice {
     background: #202731;
   }
+}
+
+/* If there’s no JS, there’s no need for the user toggle component to show */
+.no-js .user-toggle {
+  display: none;
+}
+
+.user-toggle {
+  margin: 2rem auto 0 auto;
+  padding-top: 2.5rem;
+  max-width: 20rem;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.toggle-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: var(--button-background);
+  color: var(--button-color);
+  border: none;
+  font: inherit;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  -webkit-transition: background 500ms ease-in-out, color 200ms ease;
+  transition: background 500ms ease-in-out, color 200ms ease;
+}
+
+.toggle-button__icon {
+  background: var(--button-icon);
+  width: 1.2em;
+  height: 1.2em;
+  margin: 0 0 0 0.5em;
+  -webkit-filter: var(--button-icon-filter);
+          filter: var(--button-icon-filter);
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  /* Optical adjustment */
+  -webkit-transition: -webkit-filter 500ms ease-in-out;
+  transition: -webkit-filter 500ms ease-in-out;
+  transition: filter 500ms ease-in-out;
+  transition: filter 500ms ease-in-out, -webkit-filter 500ms ease-in-out;
+}
+
+.toggle-button:focus {
+  outline: 1px solid var(--button-background);
+  outline-offset: 0.5rem;
 }

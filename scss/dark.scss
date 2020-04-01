@@ -1,134 +1,35 @@
-@import "vars";
-// Dark Mode
 @media (prefers-color-scheme: dark) {
-    // Basics
     :root {
-        :focus {
-            outline: solid 1px $primarydark;
-        }
+      --color-mode: "dark";
     }
-    ::selection {
-        background: $secondarydark;
-        color: $primarydark;
+  
+    :root:not([data-user-color-scheme]) {
+      --background: var(--color-dark);
+      --text-color: var(--color-light);
+      --button-icon: var(--icon-sun);
+      --button-icon-filter: var(--icon-sun-filter);
+      --button-background: var(--color-light);
+      --button-color: var(--color-dark);
+      --border-color: var(--color-light-alpha);
     }
-    html {
-        background: $bgdark;
-        color: $primarydark;
-    }
-    // Links
+
     a {
-        color: $linksdark;
+        color: var(--color-link);
         text-decoration: none;
-        &:visited {
-            color: $linksvisited;
-        }
-    }
-    // Navigation
-    nav {
-        .item {
-            color: $primarydark;
-            text-decoration: none;
-            text-transform: uppercase;
-            background-image: linear-gradient($primarydark, $primarydark);
-            background-repeat: no-repeat;
-            background-position: bottom left;
-            background-size: 0% 2px;
-            transition: background-size 500ms ease-in-out;
-            &:hover {
-                background-size: 100% 2px;
-            }
-            &:active {
-                border-bottom: 2px solid $primarydark;
-            }
-            &[aria-current] {
-                border-bottom: 2px solid $primarydark;
-            }
-        }
-    }
-    .menu {
-        span, span:before, span:after {
-            background: $primarydark;
-        }
-    }
-    // Footer navigation
-    .legal {
-        a {
-            color: $primarydark;
-        }
-    }
-    // Project
-    .details {
-        p {
-            font-size: 1em;
-            .icon {
-                width: 1em;
-                height: 1em;
-                fill: $primarydark;
-            }
-            a {
-                text-decoration: none;
-                background-image: linear-gradient($primarydark, $primarydark);
-                background-repeat: no-repeat;
-                background-position: bottom left;
-                background-size: 0% 2px;
-                transition: background-size 500ms ease-in-out;
-                &:hover {
-                    background-size: 100% 2px;
     
-                }
-            }
+        &:visited {
+            color: lighten($links, 25%);
         }
     }
-    // Spacing
-    hr {
-        color: $primarydark;
-    }
-    // Menu icon inverted
-    @media only screen and (max-width: 1025px) {
-        .menu {
-            fill: $primarydark;
-        }
-    }
-    // Star Icon
-    .star {
-        fill: $primarydark;
-    }
-    // Contact Icons
-    .contact {
-        fill: $primarydark;
-        .whatsapp {
-            fill: $whatsappdark;
-        }
-        .viber {
-            fill: $viberdark;
-        }
-        .discord {
-            fill: $discorddark;
-        }
-        .reddit {
-            fill: $redditdark;
-        }
-    }
-    // Social Media Icons
-    .facebook {
-        fill: $darkicons;
-    }
-    .twitter {
-        fill: $twitterdark;
-    }
-    .linkedin {
-        fill: $linkedindark;
-    }
-    .youtube {
-        fill: $darkicons;
-    }
-    .instagram {
-        fill: $darkicons;
-    }
-    .github {
-        fill: $githubdark;
-    }
-    .reddit {
-        fill: $redditdark;
-    }
-}
+
+  }
+  
+  [data-user-color-scheme="dark"] {
+    --background: var(--color-dark);
+    --text-color: var(--color-light);
+    --button-icon: var(--icon-sun);
+    --button-icon-filter: var(--icon-sun-filter);
+    --button-background: var(--color-light-alpha);
+    --button-color: var(--color-dark);
+    --border-color: var(--color-light-alpha);
+  }
