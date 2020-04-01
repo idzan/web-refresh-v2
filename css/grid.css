@@ -180,3 +180,28 @@ section {
   -ms-grid-column-span: 6;
   grid-column: 2 / span 6;
 }
+
+.cover {
+  height: 75vh;
+}
+
+.headline {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.subheadline {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 6;
+  grid-column: 2 / span 6;
+  text-align: center;
+}
