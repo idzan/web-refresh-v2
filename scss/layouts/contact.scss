@@ -1,0 +1,35 @@
+.contact-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    gap: 1em;
+}
+label {
+    font-weight: bold;
+}
+fieldset {
+    border: none;
+    width: 100%;
+    padding: 1em;
+    margin: .1em;
+}
+input, textarea {
+    border: 1px solid;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    width: 90%;
+    padding: 0.25em;
+}
+textarea {
+    resize: vertical;
+}
+button {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+}
+.contact {
+    padding-right: 1em;
+}

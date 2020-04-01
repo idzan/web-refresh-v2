@@ -334,6 +334,120 @@ section {
   background-size: 100% 2px;
 }
 
+.contact-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15em, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  gap: 1em;
+}
+
+label {
+  font-weight: bold;
+}
+
+fieldset {
+  border: none;
+  width: 100%;
+  padding: 1em;
+  margin: .1em;
+}
+
+input, textarea {
+  border: 1px solid;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  width: 90%;
+  padding: 0.25em;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+}
+
+.contact {
+  padding-right: 1em;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr .75fr 1fr;
+      grid-template-columns: 1fr .75fr 1fr;
+      grid-template-areas: "legal social copyright";
+  margin: 1.5em;
+}
+
+.legal {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: legal;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.legal a {
+  padding: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1025px) {
+  .legal a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: .75rem;
+  }
+}
+
+.social {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: social;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.social a {
+  text-decoration: none;
+  padding: 0.5em;
+}
+
+.social .icon {
+  width: 1em;
+  height: 1em;
+  padding: 0.5em;
+}
+
+.copyright {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: copyright;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: right;
+}
+
 .facebook {
   fill: #3b5998;
 }
