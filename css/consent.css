@@ -1,38 +1,6 @@
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"), url("../fonts/source-sans-pro.woff2") format("woff2"), url("../fonts/source-sans-pro.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/open-sans.woff2") format("woff2"), url("../fonts/open-sans.woff") format("woff");
-}
-
 .klaro .cookie-modal, .klaro .cookie-notice {
   /* The switch - the box around the slider */
   font-size: 1em;
-}
-
-@font-face {
-  .klaro .cookie-modal, .klaro .cookie-notice {
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 400;
-    src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"), url("../fonts/source-sans-pro.woff2") format("woff2"), url("../fonts/source-sans-pro.woff") format("woff");
-  }
-}
-
-@font-face {
-  .klaro .cookie-modal, .klaro .cookie-notice {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/open-sans.woff2") format("woff2"), url("../fonts/open-sans.woff") format("woff");
-  }
 }
 
 .klaro .cookie-modal .switch, .klaro .cookie-notice .switch {
@@ -164,7 +132,7 @@
 
 .klaro .cookie-modal .cm-btn, .klaro .cookie-notice .cm-btn {
   background: #BA1E04;
-  color: #eee;
+  color: #eeeeee;
   border-radius: 6px;
   padding: 6px 10px;
   margin-right: 0.5em;
@@ -229,7 +197,7 @@
           transform: translateY(-50%);
   position: fixed;
   overflow: auto;
-  background: #eee;
+  background: #eeeeee;
   color: #202731;
 }
 
@@ -360,7 +328,7 @@
 }
 
 .klaro .cookie-notice {
-  background: #eee;
+  background: #eeeeee;
   z-index: 999;
   position: fixed;
   width: 100%;
@@ -418,23 +386,23 @@
 
 @media (prefers-color-scheme: dark) {
   .klaro .cookie-modal p, .klaro .cookie-modal strong, .klaro .cookie-modal h1, .klaro .cookie-modal h2, .klaro .cookie-modal ul, .klaro .cookie-modal li, .klaro .cookie-notice p, .klaro .cookie-notice strong, .klaro .cookie-notice h1, .klaro .cookie-notice h2, .klaro .cookie-notice ul, .klaro .cookie-notice li {
-    color: #eee;
+    color: #eeeeee;
   }
   .klaro .cookie-modal .cm-modal {
     background: #202731;
-    color: #eee;
+    color: #eeeeee;
   }
   .klaro .cookie-modal .cm-modal .hide svg {
-    stroke: #eee;
+    stroke: #eeeeee;
   }
   .klaro .cookie-modal .cm-modal .cm-footer a.cm-powered-by {
-    color: #eee;
+    color: #eeeeee;
   }
   .klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-app p.purposes {
-    color: #eee;
+    color: #eeeeee;
   }
   .klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-app span.cm-opt-out, .klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-app span.cm-required {
-    color: #eee;
+    color: #eeeeee;
   }
   .klaro .cookie-notice {
     background: #202731;

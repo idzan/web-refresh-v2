@@ -1,0 +1,37 @@
+@import 'variables/fonts';
+@import 'variables/colors';
+@import 'variables/icons';
+
+* {
+    &:before, &:after {
+        transition: all .5s;
+    }
+}
+
+:root {
+    :focus {
+        outline: solid 1px $dark;
+    }
+    --color-dark: #{$dark};
+    --color-dark-alpha: #{$dark-alpha};
+    --color-light: #{$light};
+    --color-light-alpha: #{$light-alpha};
+}
+
+html {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+strong {
+    font-weight: 600;
+}

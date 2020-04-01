@@ -1,0 +1,72 @@
+.facebook {
+  fill: #3b5998;
+}
+
+.twitter {
+  fill: #1da1f2;
+}
+
+.linkedin {
+  fill: #0077b5;
+}
+
+.youtube {
+  fill: #ff0000;
+}
+
+.instagram {
+  fill: #e1306c;
+}
+
+.github {
+  fill: #333;
+}
+
+.reddit {
+  fill: #ff4500;
+}
+
+.whatsapp {
+  fill: #075e54;
+}
+
+.viber {
+  fill: #59267c;
+}
+
+.discord {
+  fill: #7289da;
+}
+
+@media (prefers-color-scheme: dark) {
+  .facebook {
+    fill: #eee;
+  }
+  .twitter {
+    fill: #e1e8ed;
+  }
+  .linkedin {
+    fill: #caccce;
+  }
+  .youtube {
+    fill: #eee;
+  }
+  .instagram {
+    fill: #eee;
+  }
+  .github {
+    fill: #f5f5f5;
+  }
+  .reddit {
+    fill: #5f99cf;
+  }
+  .whatsapp {
+    fill: #dcf8c6;
+  }
+  .viber {
+    fill: #e2d4e7;
+  }
+  .discord {
+    fill: #99aab5;
+  }
+}

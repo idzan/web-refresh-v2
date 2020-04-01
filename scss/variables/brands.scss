@@ -1,0 +1,83 @@
+// Brand Colors
+$facebook: #3b5998;
+$twitter: #1da1f2;
+$twitter-dark: #e1e8ed;
+$linkedin: #0077b5;
+$linkedin-dark: #caccce;
+$instagram: #e1306c;
+$youtube: #ff0000;
+$github: #333;
+$github-dark: #f5f5f5;
+$dark-icons: #eee;
+$whatsapp: #075e54;
+$whatsapp-dark: #dcf8c6;
+$viber: #59267c;
+$viber-dark: #e2d4e7;
+$discord: #7289da;
+$discord-dark: #99aab5;
+$reddit: #ff4500;
+$reddit-dark: #5f99cf;
+// Brand Icons
+.facebook {
+    fill: $facebook;
+}
+.twitter {
+    fill: $twitter;
+}
+.linkedin {
+    fill: $linkedin;
+}
+.youtube {
+    fill: $youtube;
+}
+.instagram {
+    fill: $instagram;
+}
+.github {
+    fill: $github;
+}
+.reddit {
+    fill: $reddit;
+}
+.whatsapp {
+    fill: $whatsapp;
+}
+.viber {
+    fill: $viber;
+}
+.discord {
+    fill: $discord;
+}
+// Brand Icons in Dark Mode
+@media (prefers-color-scheme: dark) {
+    .facebook {
+        fill: $dark-icons;
+    }
+    .twitter {
+        fill: $twitter-dark;
+    }
+    .linkedin {
+        fill: $linkedin-dark;
+    }
+    .youtube {
+        fill: $dark-icons;
+    }
+    .instagram {
+        fill: $dark-icons;
+    }
+    .github {
+        fill: $github-dark;
+    }
+    .reddit {
+        fill: $reddit-dark;
+    }
+    .whatsapp {
+        fill: $whatsapp-dark;
+    }
+    .viber {
+        fill: $viber-dark;
+    }
+    .discord {
+        fill: $discord-dark;
+    }
+}
