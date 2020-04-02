@@ -98,10 +98,17 @@
         </div>
         <div class="copyright">
             <p>Copyright &copy; 2010 - 2020 by Marko Idzan <br> All Rights Reserved.</p>
+            <div class="user-toggle">
+                <div role="status" class="[ visually-hidden ][ js-mode-status ]"></div>
+                <button class="[ toggle-button ] [ js-mode-toggle ]">
+                    <span class="[ toggle-button__text ] [ js-mode-toggle-text ]">Enable dark mode</span>
+                    <span class="toggle-button__icon" aria-hidden="true"></span>
+                </button>
+            </div>
         </div>
     </footer>
-    <script src="js/config.js"></script>
-    <script src="js/klaro.js"></script>
+    <script src="js/consent-config.js"></script>
+    <script src="js/consent.js"></script>
     <!-- Google Tag Manager -->
     <script type="opt-in" data-name="googleAnalytics" data-type="application/javascript">
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -114,6 +121,7 @@
     <script>
         var typed = new Typed('.typing', { strings: ['Freelance Web Designer', 'IT Technician', 'Web Administrator', 'IT Administrator', 'Photographer', 'Video Editor', 'Gamer and Nerd'], typeSpeed: 30, startDelay: 5, backSpeed: 50, backDelay: 700, loop: true });
     </script>
-    <script type="opt-in" data-name="darkModeSwitcher" data-src="js/dark-mode-switcher.js" data-type="application/javascript"></script>
+    <script src="js/manual-switch.js"></script>
+    <script type="opt-in" data-name="darkModeSwitcher" data-src="js/favicon-dark-mode.js" data-type="application/javascript"></script>
 </body>
 </html>

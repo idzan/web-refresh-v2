@@ -39,7 +39,7 @@
         }
 
         :focus {
-            outline: var(--light);
+            outline: solid 1px var(--light);
         }
     }
 
@@ -64,6 +64,7 @@
     nav {
 
         .menu-item {
+            color: var(--text-color);
             background-image: linear-gradient(var(--light), var(--light));
     
             &[aria-current] {
@@ -82,8 +83,60 @@
     .legal {
 
         a {
+            color: var(--text-color);
+        }
+    }
+
+    .cta, .returnback {
+        background: var(--accent);
+        color: var(--light);
+    
+        &:visited {
             color: var(--light);
         }
+    }
+
+    .star, .contact {
+        fill: var(--light);
+    }
+    
+    .star {
+        padding-left: 1em;
+    }
+    
+    .contact {
+        padding-right: 1em;
+    }
+    
+    .facebook {
+        fill: var(--facebook);
+    }
+    .twitter {
+        fill: var(--twitter);
+    }
+    .linkedin {
+        fill: var(--linkedin);
+    }
+    .youtube {
+        fill: var(--youtube);
+    }
+    .instagram {
+        fill: var(--instagram);
+    }
+    .github {
+        fill: var(--github);
+    }
+    .reddit {
+        fill: var(--reddit);
+    }
+    .whatsapp {
+        fill: var(--whatsapp);
+    }
+    .viber {
+        fill: var(--viber);
+    }
+    .discord {
+        fill: var(--discord);
     }
 }
 

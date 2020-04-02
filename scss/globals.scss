@@ -52,10 +52,6 @@
     --icon-moon-filter: #{$moon-filter};
     --icon-sun: #{$sun};
     --icon-sun-filter: #{$sun-filter};
-
-    :focus {
-        outline: solid 1px;
-    }
 }
 
 html {

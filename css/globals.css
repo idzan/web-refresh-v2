@@ -62,10 +62,6 @@
   --icon-sun-filter: nvert(0.61) sepia(0.8) saturate(5) hue-rotate(0deg) brightness(0.92);
 }
 
-:root :focus {
-  outline: solid 1px;
-}
-
 html {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   scroll-behavior: smooth;

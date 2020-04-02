@@ -34,7 +34,7 @@
     --viber: var(--viber);
 
     :focus {
-        outline: var(--dark);
+        outline: solid 1px var(--dark);
     }
 }
 
@@ -59,6 +59,7 @@ a {
 nav {
 
     .menu-item {
+        color: var(--dark);
         background-image: linear-gradient(var(--dark), var(--dark));
 
         &[aria-current] {
@@ -77,16 +78,16 @@ nav {
 .legal {
 
     a {
-        color: var(--dark);
+        color: var(--text-color);
     }
 }
 
 .cta, .returnback {
     background: var(--accent);
-    color: var(--text-color);
+    color: var(--light);
 
     &:visited {
-        color: var(--text-color);
+        color: var(--light);
     }
 }
 
@@ -94,7 +95,7 @@ nav {
 
     .learnmore {
         background: var(--accent);
-        color: var(--text-color);
+        color: var(--light);
     }
 }
 
