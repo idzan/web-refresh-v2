@@ -1,0 +1,17 @@
+main {
+    width: 100%;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 5em auto;
+}
+
+h1 {
+    grid-column: 2 / span 6;
+    grid-row: 1;
+}
+
+section {
+    grid-row: auto;
+    grid-column: 2 / span 6;
+}

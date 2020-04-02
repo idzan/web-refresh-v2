@@ -340,7 +340,7 @@ footer {
 }
 // Content Spacing
 hr {
-    margin: 1.5em 0;
+    //margin: 1.5em 0;
     color: $primary;
 }
 // Star Icon
@@ -376,9 +376,9 @@ input, textarea {
     width: 90%;
     padding: 0.25em;
 }
-textarea {
+/* textarea {
     resize: vertical;
-}
+} */
 button {
     padding: 1.5rem;
     background: $accent;

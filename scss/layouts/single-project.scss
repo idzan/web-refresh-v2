@@ -1,0 +1,35 @@
+.single-project {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(20em, 1fr));
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.returnback {
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.details {
+    p {
+        font-size: 1em;
+
+        strong {
+            text-transform: uppercase;
+        }
+
+        a {
+            text-decoration: none;
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            background-size: 0% 2px;
+            transition: background-size 500ms ease-in-out;
+            
+            &:hover {
+                background-size: 100% 2px;
+    
+            }
+        }
+    }
+    
+}

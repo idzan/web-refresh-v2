@@ -1,25 +1,23 @@
-@import 'vars';
-
 .klaro {
 
     .cookie-modal, .cookie-notice {
 
-        @import 'switch';
+        @import 'includes/switch';
 
         font-size: 1em;
 
         .slider {
-            box-shadow: $box-shadow;
+            box-shadow: var(--box-shadow);
         }
 
         a {
-            color: $links;
+            color: var(--blue);
             text-decoration: none;
         }
 
         p, strong, h1, h2, ul, li {
             font-family: inherit;
-            color: $primary;
+            color: var(--light);
         }
 
         p, h1, h2, ul, li {
@@ -35,8 +33,8 @@
             vertical-align: middle;
         }
         .cm-btn {
-            background: $decline;
-            color: $primarydark;
+            background: var(--red);
+            color: var(--dark);
             border-radius: 6px;
             padding: 6px 10px;
             margin-right: 0.5em;
@@ -57,11 +55,11 @@
             }
 
             &.cm-btn-success {
-                background: $accept;
+                background: var(--green);
             }
 
             &.cm-btn-info {
-                background: $accent;
+                background: var(--blue);
             }
 
             &.cm-btn-right {
@@ -94,10 +92,10 @@
 
         .cm-modal {
             z-index: 1001;
-            box-shadow: $box-shadow;
+            box-shadow: var(--box-shadow);
 
             @media(min-width: 1024px){
-                border-radius: $border-radius;
+                border-radius: var(--border-radius);
                 position: relative;
                 margin: 0 auto;
                 max-width: 640px;
@@ -113,14 +111,14 @@
 
             position: fixed;
             overflow: auto;
-            background: $bg;
-            color: $primary;
+            background: var(--light);
+            color: var(--light);
 
             .hide   {
                 border: none;
                 background: none;
                 svg {
-                    stroke: $primary;
+                    stroke: var(--light);
                 }
                 position: absolute;
                 top: 20px;
@@ -133,7 +131,7 @@
 
             .cm-footer {
                 padding: 1em;
-                border-top: $border-dark;
+                border-top: var(--border-dark);
 
                 &-buttons {
                     &::before,
@@ -150,13 +148,13 @@
                 a.cm-powered-by {
                     position: absolute;
                     right: 1em;
-                    color: $primary;
+                    color: var(--light);
                     font-size: 0.8em;
                     padding-top: 4px;
                     text-align: center;
 
                     a {
-                        color: $secondary;
+                        color: var(--grey);
                     }                
                 }
             }
@@ -164,7 +162,7 @@
             .cm-header {
                 padding: 1em;
                 padding-right: 24px;
-                border-bottom: $border-dark;
+                border-bottom: var(--border-dark);
                 h1 {
                     margin: 0;
                     font-size: 2em;
@@ -206,11 +204,11 @@
 
                         p.purposes {
                             font-size: 0.8em;
-                            color: $primary;
+                            color: var(--light);
                         }
 
                         &.cm-toggle-all {
-                            border-top: $border-dark;
+                            border-top: var(--border-dark);
                             padding-top: 1em;
                         }
 
@@ -221,7 +219,7 @@
                         span.cm-opt-out, span.cm-required {
                             padding-left: 0.2em;
                             font-size: 0.8em;
-                            color: $primary;
+                            color: var(--light);
                         }
                     }
                 }
@@ -231,7 +229,7 @@
 
     .cookie-notice {
 
-        background: $bg;
+        background: var(--light);
         z-index: 999;
 
         position: fixed;
@@ -240,8 +238,8 @@
         right: 0;
 
         @media(min-width: 990px){
-            box-shadow: $box-shadow;
-            border-radius: $border-radius;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius);
             position: fixed;
             bottom: 20px;
             right: 20px;
@@ -292,31 +290,31 @@
     .klaro {
         .cookie-modal, .cookie-notice {
             p, strong, h1, h2, ul, li {
-                color: $primarydark;
+                color: var(--dark);
             }
         }
         .cookie-modal {
             .cm-modal {
-                background: $bgdark;
-                color: $primarydark;
+                background: var(--dark);
+                color: var(--dark);
                 .hide {
                     svg {
-                        stroke: $primarydark;
+                        stroke: var(--dark);
                     }
                 }
                 .cm-footer {
                     a.cm-powered-by {
-                        color: $primarydark;
+                        color: var(--dark);
                     }
                 }
                 .cm-body {
                     ul.cm-apps {
                         li.cm-app {
                             p.purposes {
-                                color: $primarydark;
+                                color: var(--dark);
                             }
                             span.cm-opt-out, span.cm-required {
-                                color: $primarydark;
+                                color: var(--dark);
                             }
                         }
                     }
@@ -324,7 +322,7 @@
             }
         }
         .cookie-notice {
-            background: $bgdark;
+            background: var(--dark);
         }
     }
 }

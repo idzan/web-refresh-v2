@@ -1,0 +1,32 @@
+.contact-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    gap: 1em;
+}
+
+label {
+    font-weight: bold;
+}
+
+fieldset {
+    width: 100%;
+    padding: 1em;
+    margin: 0.1em;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 0.25em;
+}
+
+button {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+}
+
+.contact {
+    padding-right: 1em;
+}
