@@ -720,6 +720,13 @@ button {
   .cta:visited, .returnback:visited {
     color: var(--light);
   }
+  .details .icon {
+    fill: var(--light);
+  }
+  .details a {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--light)), to(var(--light)));
+    background-image: linear-gradient(var(--light), var(--light));
+  }
   .star, .mail, .phone {
     fill: var(--text-color);
   }

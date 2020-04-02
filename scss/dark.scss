@@ -97,6 +97,17 @@
         }
     }
 
+    .details {
+
+        .icon {
+            fill: var(--light);
+        }
+    
+        a {
+            background-image: linear-gradient(var(--light), var(--light));
+        }
+    }
+
     .star, .mail, .phone {
         fill: var(--text-color);
     }
