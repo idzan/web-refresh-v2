@@ -97,18 +97,10 @@
         }
     }
 
-    .star, .contact {
-        fill: var(--light);
+    .star, .mail, .phone {
+        fill: var(--text-color);
     }
-    
-    .star {
-        padding-left: 1em;
-    }
-    
-    .contact {
-        padding-right: 1em;
-    }
-    
+
     .facebook {
         fill: var(--facebook);
     }

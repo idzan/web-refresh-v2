@@ -121,16 +121,8 @@ button {
     color: var(--button-color-default);
 }
 
-.star, .contact {
-    fill: var(--dark);
-}
-
-.star {
-    padding-left: 1em;
-}
-
-.contact {
-    padding-right: 1em;
+.star, .mail, .phone {
+    fill: var(--other-icons);
 }
 
 .facebook {
