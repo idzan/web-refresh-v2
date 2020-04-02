@@ -25,6 +25,7 @@
   --discord: var(--discord);
   --whatsapp: var(--whatsapp);
   --viber: var(--viber);
+  --other-icons: var(--color-dark);
 }
 
 :root :focus {

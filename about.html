@@ -7,7 +7,7 @@
     <!-- Site Verification -->
     <meta name="google-site-verification" content="Nqz4seLf_1h2YSk9z3iTG4aNARiu48Q6mlEmtNpFwWw" />
     <meta name="yandex-verification" content="6dc146d60fac9641" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/master.css">
     <!-- Favicons -->
     <link rel="shortcut icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="icon" href="favicon/icon.ico" type="image/x-icon">
@@ -33,18 +33,18 @@
 </head>
 <body>
     <header>
-        <div class="nav">
-            <input type="checkbox" id="nav-switch" name="nav-switch" class="menu-check">
+        <div class="navigation">
+            <input type="checkbox" id="nav-switch" name="nav-switch" class="menu-checkbox">
             <label for="nav-switch" class="menu">
                 Menu
                 <span></span>
             </label>
             <img src="svg/logo.svg" alt="Marko Idzan" class="logo">
             <nav>
-                <a href="index.html" class="item">Home</a>
-                <a href="about.html" class="item" aria-current="page">About</a>
-                <a href="projects.html" class="item">Projects</a>
-                <a href="contact.html" class="item">Contact</a>
+                <a href="index.html" class="menu-item">Home</a>
+                <a href="about.html" class="menu-item" aria-current="page">About</a>
+                <a href="projects.html" class="menu-item">Projects</a>
+                <a href="contact.html" class="menu-item">Contact</a>
             </nav>
         </div>
     </header>
@@ -67,18 +67,18 @@
             <p><strong>Self-Employed</strong> <br> Freelance Web Designer & Administrator (Jan. 2018 – Present)</p>
             <hr>
             <h3>Skills</h3>
-            <p><strong>Web Design (HTML, CSS, JS)</strong> - Advanced (4.5/5) <svg class="star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
-            <p><strong>Web Development (php)</strong> - Basic (2.5/5) <svg class="star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
-            <p><strong>Web Administration (WordPress, Joomla, Prestashop)</strong> - Advanced (4.5/5) <svg class="star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
-            <p><strong>SEO/SEM</strong> - Intermediate (3.5/5) <svg class="star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
-            <p><strong>Objective Oriented Programming (Java, C#)</strong> - Basic (2.5/5) <svg class="star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
-            <p><strong>System Administration (Windows)</strong> - Advanced (4.5/5) <svg class="star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
-            <p><strong>System Administration (Linux)</strong> - Intermediate (4/5) <svg class="star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
-            <p><strong>System Administration (macOS/OS X)</strong> - Intermediate (4/5) <svg class="star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
-            <p><strong>Social Media Management</strong> - Intermediate (4/5) <svg class="star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
-            <p><strong>Graphics Design</strong> - Basic (3/5) <svg class="star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
-            <p><strong>Photography</strong> - Intermediate (3.5/5) <svg class="star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
-            <p><strong>Video Production</strong> - Basic (3/5) <svg class="star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
+            <p><strong>Web Design (HTML, CSS, JS)</strong> - Advanced (4.5/5) <svg class="icon star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
+            <p><strong>Web Development (php)</strong> - Basic (2.5/5) <svg class="icon star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
+            <p><strong>Web Administration (WordPress, Joomla, Prestashop)</strong> - Advanced (4.5/5) <svg class="icon star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
+            <p><strong>SEO/SEM</strong> - Intermediate (3.5/5) <svg class="icon star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
+            <p><strong>Objective Oriented Programming (Java, C#)</strong> - Basic (2.5/5) <svg class="icon star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
+            <p><strong>System Administration (Windows)</strong> - Advanced (4.5/5) <svg class="icon star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
+            <p><strong>System Administration (Linux)</strong> - Intermediate (4/5) <svg class="icon star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
+            <p><strong>System Administration (macOS/OS X)</strong> - Intermediate (4/5) <svg class="icon star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
+            <p><strong>Social Media Management</strong> - Intermediate (4/5) <svg class="icon star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
+            <p><strong>Graphics Design</strong> - Basic (3/5) <svg class="icon star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
+            <p><strong>Photography</strong> - Intermediate (3.5/5) <svg class="icon star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
+            <p><strong>Video Production</strong> - Basic (3/5) <svg class="icon star"><use xlink:href="/svg/sprite.svg#star"></use></svg></p>
         </section>
     </main>
     <footer>
@@ -126,10 +126,17 @@
         </div>
         <div class="copyright">
             <p>Copyright &copy; 2010 - 2020 by Marko Idzan <br> All Rights Reserved.</p>
+            <div class="user-toggle">
+                <div role="status" class="[ visually-hidden ][ js-mode-status ]"></div>
+                <button class="[ toggle-button ] [ js-mode-toggle ]">
+                    <span class="[ toggle-button__text ] [ js-mode-toggle-text ]">Enable dark mode</span>
+                    <span class="toggle-button__icon" aria-hidden="true"></span>
+                </button>
+            </div>
         </div>
     </footer>
-    <script src="js/config.js"></script>
-    <script src="js/klaro.js"></script>
+    <script src="js/consent-config.js"></script>
+    <script src="js/consent.js"></script>
     <!-- Google Tag Manager -->
     <script type="opt-in" data-name="googleAnalytics" data-type="application/javascript">
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -138,6 +145,7 @@
         })(window,document,'script','dataLayer','GTM-P24BSDN');
     </script>
     <!-- End Google Tag Manager -->
+    <script type="opt-in" data-name="darkModeSwitcher" data-src="js/manual-switch.js" data-type="application/javascript"></script>
     <script type="opt-in" data-name="darkModeSwitcher" data-src="js/dark-mode-switcher.js" data-type="application/javascript"></script>
 </body>
 </html>

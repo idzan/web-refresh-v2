@@ -28,6 +28,7 @@
     --discord: var(--discord-dark);
     --whatsapp: var(--whatsapp-dark);
     --viber: var(--viber-dark);
+    --other-icons: var(--color-light);
   }
   :root :focus {
     outline: solid 1px var(--light);
