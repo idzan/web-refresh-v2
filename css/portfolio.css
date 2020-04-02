@@ -1,0 +1,16 @@
+.portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1em;
+}
+
+.portfolio .learnmore {
+  padding: .5em;
+  border-radius: .5rem;
+}
+
+.portfolio .project {
+  margin: .25em;
+}

@@ -1,134 +1,178 @@
-@import "vars";
-// Dark Mode
 @media (prefers-color-scheme: dark) {
-    // Basics
+
     :root {
+        --color-mode: "dark";
+
+        &:not([data-user-color-scheme]) {
+
+            --background: var(--color-dark);
+            --text-color: var(--color-light);
+
+            --dark: var(--color-dark);
+            --light: var(--color-light);
+            --accent: var(--color-blue);
+            --grey: var(--color-grey);
+
+            --link: var(--color-light-blue);
+            --link-visited: var(--color-blue);
+
+            --button-background-default: var(--color-blue);
+            --button-color-default: var(--color-light);
+
+            --button-background: var(--color-light);
+            --button-color: var(--color-dark);
+            --border-color: var(--color-light-alpha);
+            --button-icon: var(--icon-sun);
+            --button-icon-filter: var(--icon-sun-filter);
+
+            --facebook: var(--facebook-dark);
+            --twitter: var(--twitter-dark);
+            --linkedin: var(--linkedin-dark);
+            --instagram: var(--instagram-dark);
+            --youtube: var(--youtube-dark);
+            --github: var(--github-dark);
+            --reddit: var(--reddit-dark);
+            --discord: var(--discord-dark);
+            --whatsapp: var(--whatsapp-dark);
+            --viber: var(--viber-dark);
+            --other-icons: var(--color-light);
+
+        }
+
         :focus {
-            outline: solid 1px $primarydark;
+            outline: solid 1px var(--light);
         }
     }
+
     ::selection {
-        background: $secondarydark;
-        color: $primarydark;
+        background: var(--background);
+        color: var(--text-color);
     }
-    html {
-        background: $bgdark;
-        color: $primarydark;
-    }
-    // Links
-    a {
-        color: $linksdark;
-        text-decoration: none;
-        &:visited {
-            color: $linksvisited;
-        }
-    }
-    // Navigation
-    nav {
-        .item {
-            color: $primarydark;
-            text-decoration: none;
-            text-transform: uppercase;
-            background-image: linear-gradient($primarydark, $primarydark);
-            background-repeat: no-repeat;
-            background-position: bottom left;
-            background-size: 0% 2px;
-            transition: background-size 500ms ease-in-out;
-            &:hover {
-                background-size: 100% 2px;
-            }
-            &:active {
-                border-bottom: 2px solid $primarydark;
-            }
-            &[aria-current] {
-                border-bottom: 2px solid $primarydark;
-            }
-        }
-    }
-    .menu {
-        span, span:before, span:after {
-            background: $primarydark;
-        }
-    }
-    // Footer navigation
-    .legal {
-        a {
-            color: $primarydark;
-        }
-    }
-    // Project
-    .details {
-        p {
-            font-size: 1em;
-            .icon {
-                width: 1em;
-                height: 1em;
-                fill: $primarydark;
-            }
-            a {
-                text-decoration: none;
-                background-image: linear-gradient($primarydark, $primarydark);
-                background-repeat: no-repeat;
-                background-position: bottom left;
-                background-size: 0% 2px;
-                transition: background-size 500ms ease-in-out;
-                &:hover {
-                    background-size: 100% 2px;
     
-                }
+    body {
+        background: var(--background);
+        color: var(--text-color);
+    }
+    
+    a {
+        color: var(--link);
+    
+        &:visited {
+            color: var(--link-visited);
+        }
+    }
+
+    nav {
+
+        .menu-item {
+            color: var(--text-color);
+            background-image: linear-gradient(var(--text-color), var(--text-color));
+    
+            &[aria-current] {
+                border-bottom: 2px solid var(--text-color);
             }
         }
     }
-    // Spacing
-    hr {
-        color: $primarydark;
-    }
-    // Menu icon inverted
-    @media only screen and (max-width: 1025px) {
-        .menu {
-            fill: $primarydark;
+
+    .menu {
+
+        span, span:before, span:after {
+            background: var(--text-color);
         }
     }
-    // Star Icon
-    .star {
-        fill: $primarydark;
-    }
-    // Contact Icons
-    .contact {
-        fill: $primarydark;
-        .whatsapp {
-            fill: $whatsappdark;
-        }
-        .viber {
-            fill: $viberdark;
-        }
-        .discord {
-            fill: $discorddark;
-        }
-        .reddit {
-            fill: $redditdark;
+
+    .legal {
+
+        a {
+            color: var(--text-color);
         }
     }
-    // Social Media Icons
+
+    .cta, .returnback {
+        background: var(--accent);
+        color: var(--light);
+    
+        &:visited {
+            color: var(--light);
+        }
+    }
+
+    .details {
+
+        .icon {
+            fill: var(--text-color);
+        }
+    
+        a {
+            background-image: linear-gradient(var(--light), var(--light));
+        }
+    }
+
+    .star, .mail, .phone {
+        fill: var(--text-color);
+    }
+
     .facebook {
-        fill: $darkicons;
+        fill: var(--facebook);
     }
     .twitter {
-        fill: $twitterdark;
+        fill: var(--twitter);
     }
     .linkedin {
-        fill: $linkedindark;
+        fill: var(--linkedin);
     }
     .youtube {
-        fill: $darkicons;
+        fill: var(--youtube);
     }
     .instagram {
-        fill: $darkicons;
+        fill: var(--instagram);
     }
     .github {
-        fill: $githubdark;
+        fill: var(--github);
     }
     .reddit {
-        fill: $redditdark;
+        fill: var(--reddit);
     }
+    .whatsapp {
+        fill: var(--whatsapp);
+    }
+    .viber {
+        fill: var(--viber);
+    }
+    .discord {
+        fill: var(--discord);
+    }
+}
+
+[data-user-color-scheme="dark"] {
+    --background: var(--color-dark);
+    --text-color: var(--color-light);
+
+    --dark: var(--color-dark);
+    --light: var(--color-light);
+    --accent: var(--color-blue);
+    --grey: var(--color-grey);
+
+    --link: var(--color-light-blue);
+    --link-visited: var(--color-blue);
+
+    --button-background-default: var(--color-blue);
+    --button-color-default: var(--color-light);
+
+    --button-background: var(--color-light);
+    --button-color: var(--color-dark);
+    --border-color: var(--color-light-alpha);
+    --button-icon: var(--icon-sun);
+    --button-icon-filter: var(--icon-sun-filter);
+
+    --facebook: var(--facebook-dark);
+    --twitter: var(--twitter-dark);
+    --linkedin: var(--linkedin-dark);
+    --instagram: var(--instagram-dark);
+    --youtube: var(--youtube-dark);
+    --github: var(--github-dark);
+    --reddit: var(--reddit-dark);
+    --discord: var(--discord-dark);
+    --whatsapp: var(--whatsapp-dark);
+    --viber: var(--viber-dark);
 }

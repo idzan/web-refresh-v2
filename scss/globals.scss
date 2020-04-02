@@ -1,0 +1,104 @@
+@import 'variables/fonts';
+@import 'variables/colors';
+@import 'variables/icons';
+
+* {
+    &:before, &:after {
+        transition: all .5s;
+    }
+}
+
+:root {
+
+    --color-dark: #{$dark};
+    --color-light: #{$light};
+    --color-grey: #{$grey};
+    --color-blue: #{$blue};
+    --color-light-blue: #{$light-blue};
+    --color-dark-blue: #{$dark-blue};
+    --color-green: #{$green};
+    --color-red: #{$red};
+
+    --color-dark-alpha: #{$dark-alpha};
+    --color-light-alpha: #{$light-alpha};
+
+    --facebook-light: #{$facebook};
+    --twitter-light: #{$twitter};
+    --linkedin-light: #{$linkedin};
+    --instagram-light: #{$instagram};
+    --youtube-light: #{$youtube};
+    --github-light: #{$github};
+    --reddit-light: #{$reddit};
+    --discord-light: #{$discord};
+    --whatsapp-light: #{$whatsapp};
+    --viber-light: #{$viber};
+
+    --facebook-dark: #{$dark-icons};
+    --twitter-dark: #{$twitter-dark};
+    --linkedin-dark: #{$linkedin-dark};
+    --instagram-dark: #{$dark-icons};
+    --youtube-dark: #{$dark-icons};
+    --github-dark: #{$github-dark};
+    --reddit-dark: #{$reddit-dark};
+    --discord-dark: #{$discord-dark};
+    --whatsapp-dark: #{$whatsapp-dark};
+    --viber-dark: #{$viber-dark};
+
+    --box-shadow: #{$box-shadow};
+    --border-radius: #{$border-radius};
+    --border-dark: #{$border-dark};
+
+    --icon-moon: #{$moon};
+    --icon-moon-filter: #{$moon-filter};
+    --icon-sun: #{$sun};
+    --icon-sun-filter: #{$sun-filter};
+}
+
+html {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    transition: background 500ms ease-in-out, color 200ms ease;
+}
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+}
+
+img, picture {
+    width: 100%;
+    max-width: 100%;
+}
+
+hr {
+    margin: 1.5em 0;
+}
+
+fieldset {
+    border: none;
+}
+
+input, textarea {
+    border: 1px solid;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+textarea {
+    resize: vertical;
+}

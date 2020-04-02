@@ -1,0 +1,13 @@
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1em;
+
+    .learnmore {
+        padding: .5em;
+        border-radius: .5rem;
+    }
+    .project {
+        margin: .25em;
+    }
+}

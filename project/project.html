@@ -7,7 +7,7 @@
     <!-- Site Verification -->
     <meta name="google-site-verification" content="Nqz4seLf_1h2YSk9z3iTG4aNARiu48Q6mlEmtNpFwWw" />
     <meta name="yandex-verification" content="6dc146d60fac9641" />
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/master.css">
     <!-- Favicons -->
     <link rel="shortcut icon" href="/favicon/icon.svg" type="image/svg+xml">  
     <link rel="icon" href="/favicon/icon.ico" type="image/x-icon">
@@ -33,18 +33,18 @@
 </head>
 <body>
     <header>
-        <div class="nav">
-            <input type="checkbox" id="nav-switch" name="nav-switch" class="menu-check">
+        <div class="navigation">
+            <input type="checkbox" id="nav-switch" name="nav-switch" class="menu-checkbox">
             <label for="nav-switch" class="menu">
                 Menu
                 <span></span>
             </label>
             <img src="/svg/logo.svg" alt="Marko Idzan" class="logo">
             <nav>
-                <a href="/index.html" class="item">Home</a>
-                <a href="/about.html" class="item">About</a>
-                <a href="/projects.html" class="item">Projects</a>
-                <a href="/contact.html" class="item">Contact</a>
+                <a href="/index.html" class="menu-item">Home</a>
+                <a href="/about.html" class="menu-item">About</a>
+                <a href="/projects.html" class="menu-item">Projects</a>
+                <a href="/contact.html" class="menu-item">Contact</a>
             </nav>
         </div>
     </header>
@@ -82,36 +82,43 @@
         </div>
         <div class="social">
             <a href="https://www.facebook.com/Idzan.Marko.Official" target="_blank" rel="noopener noreferrer">
+                <span class="visually-hidden" aria-hidden="true">Facebook Fan Page</span>
                 <svg class="icon facebook">
                     <use href="/svg/sprite.svg#facebook"></use>
                 </svg>
             </a>
             <a href="https://twitter.com/idzanmarko" target="_blank" rel="noopener noreferrer">
+                <span class="visually-hidden" aria-hidden="true">Twitter Account</span>
                 <svg class="icon twitter">
                     <use href="/svg/sprite.svg#twitter"></use>
                 </svg>
             </a>
             <a href="https://www.linkedin.com/in/markoidzan/" target="_blank" rel="noopener noreferrer">
+                <span class="visually-hidden" aria-hidden="true">LinkedIn Profile</span>
                 <svg class="icon linkedin">
                     <use href="/svg/sprite.svg#linkedin"></use>
                 </svg>
             </a>
             <a href="https://www.youtube.com/channel/UC1E7cbcnFqHEqTYmbZHKDPA" target="_blank" rel="noopener noreferrer">
+                <span class="visually-hidden" aria-hidden="true">YouTube Channel</span>
                 <svg class="icon youtube">
                     <use href="/svg/sprite.svg#youtube"></use>
                 </svg>
             </a>
             <a href="https://www.instagram.com/idzan.marko.official/" target="_blank" rel="noopener noreferrer">
+                <span class="visually-hidden" aria-hidden="true">Instagram Account</span>
                 <svg class="icon instagram">
                     <use href="/svg/sprite.svg#instagram"></use>
                 </svg>
             </a>
             <a href="https://github.com/idzan" target="_blank" rel="noopener noreferrer">
+                <span class="visually-hidden" aria-hidden="true">GitHub Profile</span>
                 <svg class="icon github">
                     <use href="/svg/sprite.svg#github"></use>
                 </svg>
             </a>
             <a href="https://www.reddit.com/r/MarkoIdzanOfficial/" target="_blank" rel="noopener noreferrer">
+                <span class="visually-hidden" aria-hidden="true">Reddit Subreddit</span>
                 <svg class="icon reddit">
                     <use href="/svg/sprite.svg#reddit"></use>
                 </svg>
@@ -119,10 +126,17 @@
         </div>
         <div class="copyright">
             <p>Copyright &copy; 2010 - 2020 by Marko Idzan <br> All Rights Reserved.</p>
+            <div class="user-toggle">
+                <div role="status" class="[ visually-hidden ][ js-mode-status ]"></div>
+                <button class="[ toggle-button ] [ js-mode-toggle ]">
+                    <span class="[ toggle-button__text ] [ js-mode-toggle-text ]">Enable dark mode</span>
+                    <span class="toggle-button__icon" aria-hidden="true"></span>
+                </button>
+            </div>
         </div>
     </footer>
-    <script src="/js/config.js"></script>
-    <script src="/js/klaro.js"></script>
+    <script src="/js/consent-config.js"></script>
+    <script src="/js/consent.js"></script>
     <!-- Google Tag Manager -->
     <script type="opt-in" data-name="googleAnalytics" data-type="application/javascript">
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -131,6 +145,7 @@
         })(window,document,'script','dataLayer','GTM-P24BSDN');
     </script>
     <!-- End Google Tag Manager -->
-    <script type="opt-in" data-name="darkModeSwitcher" data-src="/js/dark-mode-switcher.js" data-type="application/javascript"></script>
+    <script type="opt-in" data-name="darkModeSwitcher" data-src="/js/manual-switch.js" data-type="application/javascript"></script>
+    <script type="opt-in" data-name="darkModeSwitcher" data-src="/js/favicon-dark-mode.js" data-type="application/javascript"></script>
 </body>
 </html>
