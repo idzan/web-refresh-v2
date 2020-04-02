@@ -584,7 +584,7 @@ nav .menu-item[aria-current] {
 }
 
 .details .icon {
-  fill: var(--dark);
+  fill: var(--other-icons);
 }
 
 .details a {
@@ -721,7 +721,7 @@ button {
     color: var(--light);
   }
   .details .icon {
-    fill: var(--light);
+    fill: var(--text-color);
   }
   .details a {
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--light)), to(var(--light)));
