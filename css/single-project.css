@@ -1,0 +1,34 @@
+.single-project {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20em, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.returnback {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.details p {
+  font-size: 1em;
+}
+
+.details p strong {
+  text-transform: uppercase;
+}
+
+.details p a {
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0% 2px;
+  -webkit-transition: background-size 500ms ease-in-out;
+  transition: background-size 500ms ease-in-out;
+}
+
+.details p a:hover {
+  background-size: 100% 2px;
+}

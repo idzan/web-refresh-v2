@@ -1,0 +1,67 @@
+footer {
+  grid-area: footer;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr .75fr 1fr;
+      grid-template-columns: 1fr .75fr 1fr;
+      grid-template-areas: "legal social copyright";
+  margin: 1.5em;
+}
+
+.legal {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: legal;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.legal a {
+  padding: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1025px) {
+  .legal a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: .75rem;
+  }
+}
+
+.social {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: social;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.social a {
+  text-decoration: none;
+  padding: 0.5em;
+}
+
+.social .icon {
+  width: 1em;
+  height: 1em;
+  padding: 0.5em;
+}
+
+.copyright {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: copyright;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: right;
+}

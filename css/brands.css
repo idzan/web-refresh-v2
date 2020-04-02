@@ -1,0 +1,72 @@
+.facebook {
+  fill: var(--facebook);
+}
+
+.twitter {
+  fill: var(--twitter);
+}
+
+.linkedin {
+  fill: var(--linkedin);
+}
+
+.youtube {
+  fill: var(--youtube);
+}
+
+.instagram {
+  fill: var(--instagram);
+}
+
+.github {
+  fill: var(--github);
+}
+
+.reddit {
+  fill: var(--reddit);
+}
+
+.whatsapp {
+  fill: var(--whatsapp);
+}
+
+.viber {
+  fill: var(--viber);
+}
+
+.discord {
+  fill: var(--discord);
+}
+
+@media (prefers-color-scheme: dark) {
+  .facebook {
+    fill: var(--dark-icons);
+  }
+  .twitter {
+    fill: var(--twitter-dark);
+  }
+  .linkedin {
+    fill: var(--linkedin-dark);
+  }
+  .youtube {
+    fill: var(--dark-icons);
+  }
+  .instagram {
+    fill: var(--dark-icons);
+  }
+  .github {
+    fill: var(--github-dark);
+  }
+  .reddit {
+    fill: var(--reddit-dark);
+  }
+  .whatsapp {
+    fill: var(--whatsapp-dark);
+  }
+  .viber {
+    fill: var(--viber-dark);
+  }
+  .discord {
+    fill: var(--discord-dark);
+  }
+}

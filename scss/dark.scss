@@ -42,6 +42,49 @@
             outline: var(--light);
         }
     }
+
+    ::selection {
+        background: var(--background);
+        color: var(--text-color);
+    }
+    
+    body {
+        background: var(--background);
+        color: var(--text-color);
+    }
+    
+    a {
+        color: var(--link);
+    
+        &:visited {
+            color: var(--link-visited);
+        }
+    }
+
+    nav {
+
+        .menu-item {
+            background-image: linear-gradient(var(--light), var(--light));
+    
+            &[aria-current] {
+                border-bottom: 2px solid var(--light);
+            }
+        }
+    }
+
+    .menu {
+
+        span, span:before, span:after {
+            background: var(--light);
+        }
+    }
+
+    .legal {
+
+        a {
+            color: var(--light);
+        }
+    }
 }
 
 [data-user-color-scheme="dark"] {

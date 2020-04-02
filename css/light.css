@@ -1,0 +1,157 @@
+:root {
+  --color-mode: "light";
+  --background: var(--color-light);
+  --text-color: var(--color-dark);
+  --dark: var(--color-dark);
+  --light: var(--color-light);
+  --accent: var(--color-blue);
+  --grey: var(--color-grey);
+  --link: var(--color-blue);
+  --link-visited: var(--color-dark-blue);
+  --button-background-default: var(--color-blue);
+  --button-color-default: var(--color-light);
+  --button-background: var(--color-dark);
+  --button-color: var(--color-light);
+  --border-color: var(--color-dark-alpha);
+  --button-icon: var(--icon-moon);
+  --button-icon-filter: var(--icon-moon-filter);
+  --facebook: var(--facebook);
+  --twitter: var(--twitter);
+  --linkedin: var(--linkedin);
+  --instagram: var(--instagram);
+  --youtube: var(--youtube);
+  --github: var(--github);
+  --reddit: var(--reddit);
+  --discord: var(--discord);
+  --whatsapp: var(--whatsapp);
+  --viber: var(--viber);
+}
+
+:root :focus {
+  outline: var(--dark);
+}
+
+::-moz-selection {
+  background: var(--background);
+  color: var(--text-color);
+}
+
+::selection {
+  background: var(--background);
+  color: var(--text-color);
+}
+
+body {
+  background: var(--background);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link);
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+nav .menu-item {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--dark)), to(var(--dark)));
+  background-image: linear-gradient(var(--dark), var(--dark));
+}
+
+nav .menu-item[aria-current] {
+  border-bottom: 2px solid var(--dark);
+}
+
+.menu span, .menu span:before, .menu span:after {
+  background: var(--dark);
+}
+
+.legal a {
+  color: var(--dark);
+}
+
+.cta, .returnback {
+  background: var(--accent);
+  color: var(--text-color);
+}
+
+.cta:visited, .returnback:visited {
+  color: var(--text-color);
+}
+
+.portfolio .learnmore {
+  background: var(--accent);
+  color: var(--text-color);
+}
+
+.details .icon {
+  fill: var(--dark);
+}
+
+.details a {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--dark)), to(var(--dark)));
+  background-image: linear-gradient(var(--dark), var(--dark));
+}
+
+input, textarea {
+  background-color: var(--light);
+  color: var(--grey);
+}
+
+button {
+  background: var(--button-background-default);
+  color: var(--button-color-default);
+}
+
+.star, .contact {
+  fill: var(--dark);
+}
+
+.star {
+  padding-left: 1em;
+}
+
+.contact {
+  padding-right: 1em;
+}
+
+.facebook {
+  fill: var(--facebook);
+}
+
+.twitter {
+  fill: var(--twitter);
+}
+
+.linkedin {
+  fill: var(--linkedin);
+}
+
+.youtube {
+  fill: var(--youtube);
+}
+
+.instagram {
+  fill: var(--instagram);
+}
+
+.github {
+  fill: var(--github);
+}
+
+.reddit {
+  fill: var(--reddit);
+}
+
+.whatsapp {
+  fill: var(--whatsapp);
+}
+
+.viber {
+  fill: var(--viber);
+}
+
+.discord {
+  fill: var(--discord);
+}

@@ -1,137 +1,94 @@
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"), url("../fonts/source-sans-pro.woff2") format("woff2"), url("../fonts/source-sans-pro.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/open-sans.woff2") format("woff2"), url("../fonts/open-sans.woff") format("woff");
-}
-
 @media (prefers-color-scheme: dark) {
+  :root {
+    --color-mode: "dark";
+  }
+  :root:not([data-user-color-scheme]) {
+    --background: var(--color-dark);
+    --text-color: var(--color-light);
+    --dark: var(--color-dark);
+    --light: var(--color-light);
+    --accent: var(--color-blue);
+    --grey: var(--color-grey);
+    --link: var(--color-light-blue);
+    --link-visited: var(--color-blue);
+    --button-background-default: var(--color-blue);
+    --button-color-default: var(--color-light);
+    --button-background: var(--color-light);
+    --button-color: var(--color-dark);
+    --border-color: var(--color-light-alpha);
+    --button-icon: var(--icon-sun);
+    --button-icon-filter: var(--icon-sun-filter);
+    --facebook: var(--facebook-dark);
+    --twitter: var(--twitter-dark);
+    --linkedin: var(--linkedin-dark);
+    --instagram: var(--instagram-dark);
+    --youtube: var(--youtube-dark);
+    --github: var(--github-dark);
+    --reddit: var(--reddit-dark);
+    --discord: var(--discord-dark);
+    --whatsapp: var(--whatsapp-dark);
+    --viber: var(--viber-dark);
+  }
   :root :focus {
-    outline: solid 1px #eee;
+    outline: var(--light);
   }
   ::-moz-selection {
-    background: #2c4a6b;
-    color: #eee;
+    background: var(--background);
+    color: var(--text-color);
   }
   ::selection {
-    background: #2c4a6b;
-    color: #eee;
+    background: var(--background);
+    color: var(--text-color);
   }
-  html {
-    background: #202731;
-    color: #eee;
+  body {
+    background: var(--background);
+    color: var(--text-color);
   }
   a {
-    color: #eee;
-    text-decoration: none;
+    color: var(--link);
   }
   a:visited {
-    color: #6f98c5;
+    color: var(--link-visited);
   }
-  nav .item {
-    color: #eee;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#eee));
-    background-image: linear-gradient(#eee, #eee);
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: 0% 2px;
-    -webkit-transition: background-size 500ms ease-in-out;
-    transition: background-size 500ms ease-in-out;
+  nav .menu-item {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--light)), to(var(--light)));
+    background-image: linear-gradient(var(--light), var(--light));
   }
-  nav .item:hover {
-    background-size: 100% 2px;
-  }
-  nav .item:active {
-    border-bottom: 2px solid #eee;
-  }
-  nav .item[aria-current] {
-    border-bottom: 2px solid #eee;
+  nav .menu-item[aria-current] {
+    border-bottom: 2px solid var(--light);
   }
   .menu span, .menu span:before, .menu span:after {
-    background: #eee;
+    background: var(--light);
   }
   .legal a {
-    color: #eee;
-  }
-  .details p {
-    font-size: 1em;
-  }
-  .details p .icon {
-    width: 1em;
-    height: 1em;
-    fill: #eee;
-  }
-  .details p a {
-    text-decoration: none;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#eee));
-    background-image: linear-gradient(#eee, #eee);
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: 0% 2px;
-    -webkit-transition: background-size 500ms ease-in-out;
-    transition: background-size 500ms ease-in-out;
-  }
-  .details p a:hover {
-    background-size: 100% 2px;
-  }
-  hr {
-    color: #eee;
+    color: var(--light);
   }
 }
 
-@media only screen and (prefers-color-scheme: dark) and (max-width: 1025px) {
-  .menu {
-    fill: #eee;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .star {
-    fill: #eee;
-  }
-  .contact {
-    fill: #eee;
-  }
-  .contact .whatsapp {
-    fill: #dcf8c6;
-  }
-  .contact .viber {
-    fill: #e2d4e7;
-  }
-  .contact .discord {
-    fill: #99aab5;
-  }
-  .contact .reddit {
-    fill: #5f99cf;
-  }
-  .facebook {
-    fill: #eee;
-  }
-  .twitter {
-    fill: #e1e8ed;
-  }
-  .linkedin {
-    fill: #caccce;
-  }
-  .youtube {
-    fill: #eee;
-  }
-  .instagram {
-    fill: #eee;
-  }
-  .github {
-    fill: #f5f5f5;
-  }
-  .reddit {
-    fill: #5f99cf;
-  }
+[data-user-color-scheme="dark"] {
+  --background: var(--color-dark);
+  --text-color: var(--color-light);
+  --dark: var(--color-dark);
+  --light: var(--color-light);
+  --accent: var(--color-blue);
+  --grey: var(--color-grey);
+  --link: var(--color-light-blue);
+  --link-visited: var(--color-blue);
+  --button-background-default: var(--color-blue);
+  --button-color-default: var(--color-light);
+  --button-background: var(--color-light);
+  --button-color: var(--color-dark);
+  --border-color: var(--color-light-alpha);
+  --button-icon: var(--icon-sun);
+  --button-icon-filter: var(--icon-sun-filter);
+  --facebook: var(--facebook-dark);
+  --twitter: var(--twitter-dark);
+  --linkedin: var(--linkedin-dark);
+  --instagram: var(--instagram-dark);
+  --youtube: var(--youtube-dark);
+  --github: var(--github-dark);
+  --reddit: var(--reddit-dark);
+  --discord: var(--discord-dark);
+  --whatsapp: var(--whatsapp-dark);
+  --viber: var(--viber-dark);
 }
