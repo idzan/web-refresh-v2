@@ -17,6 +17,14 @@
   height: 1em;
 }
 
+.star {
+  padding-left: 1em;
+}
+
+.contact {
+  padding-right: 1em;
+}
+
 *:before, *:after {
   -webkit-transition: all .5s;
   transition: all .5s;
