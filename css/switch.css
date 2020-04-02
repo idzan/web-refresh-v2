@@ -8,16 +8,16 @@
 
 .switch.disabled input:checked + .slider {
   opacity: 0.5;
-  background-color: var(--blue);
+  background-color: var(--color-blue);
 }
 
 .cm-app-input:checked + .cm-app-label .slider {
-  background-color: var(--blue);
+  background-color: var(--color-blue);
 }
 
 .cm-app-input.required:checked + .cm-app-label .slider {
   opacity: 0.8;
-  background-color: var(--green);
+  background-color: var(--color-green);
   cursor: not-allowed;
 }
 
@@ -75,8 +75,8 @@
 }
 
 .cm-app-label input:focus + .slider {
-  -webkit-box-shadow: 0 0 1px var(--blue);
-          box-shadow: 0 0 1px var(--blue);
+  -webkit-box-shadow: 0 0 1px var(--color-blue);
+          box-shadow: 0 0 1px var(--color-blue);
 }
 
 .cm-app-label input:checked + .slider:before {
@@ -90,7 +90,7 @@
 }
 
 .cm-app-input:checked + .cm-app-label .slider {
-  background-color: var(--blue);
+  background-color: var(--color-blue);
 }
 
 .cm-app-input:checked + .cm-app-label .slider:before {
