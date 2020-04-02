@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://idzan.eu/</title>
+  <link>https://idzan.eu/</link>
+
+<item>
+     <link>https://idzan.eu/</link>
+     <title>Marko Idzan</title>
+     <description>Marko Idžan’s Official Web Site</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/about</link>
+     <title>About me - Marko Idzan</title>
+     <description>About and CV for Marko Idžan</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/projects</link>
+     <title>Projects - Marko Idzan</title>
+     <description>Marko Idžan’s Projects Page</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/contact</link>
+     <title>Contact - Marko Idzan</title>
+     <description>Contact page for Marko Idzan's Web Site</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/privacy</link>
+     <title>Privacy Policy - Marko Idzan</title>
+     <description>Privacy Policy for Marko Idzan's Web Site</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/terms</link>
+     <title>Terms of Service - Marko Idzan</title>
+     <description>Terms of Service for Marko Idzan's Web Site</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/project/parish-of-st-vitus-petrusevec-web-site</link>
+     <title>“Parish of St. Vitus, Petrusevec - Zagreb” Web Site - Marko Idzan</title>
+     <description>“Parish of St. Vitus, Petrusevec - Zagreb” Web Site Project</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/project/hocunamore-web-site</link>
+     <title>“Hoću na more (hocunamore.hr)” Web Site - Marko Idzan</title>
+     <description>“Hoću na more (hocunamore.hr)” Web Site Project</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/project/parish-of-st-barbara-vrapce-web-site</link>
+     <title>“Parish of St. Barbara's, Vrapce - Zagreb” Web Site - Marko Idzan</title>
+     <description>“Parish of St. Barbara's, Vrapce - Zagreb” Web Site Project</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/project/kursiljo-web-site</link>
+     <title>“Kursiljo Croatia” Web Site - Marko Idzan</title>
+     <description>“Kursiljo Croatia” Web Site Project</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/project/simun-emanuel-travels-web-site</link>
+     <title>“Šimun Emanuel Travels” Web Site - Marko Idzan</title>
+     <description>“Šimun Emanuel Travels” Web Site Project</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/project/mybar-web-shop</link>
+     <title>“MyBar.hr” Web Shop - Marko Idzan</title>
+     <description>“Mybar.hr” Web Shop Project</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/project/nekretnina-web-site</link>
+     <title>“Nekretnina.hr” Web Site - Marko Idzan</title>
+     <description>“Nekretnina.hr” Web Site Project</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/project/maskice-web-shop</link>
+     <title>“Maskice.hr” Web Shop - Marko Idzan</title>
+     <description>“Maskice.hr” Web Shop Project</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/project/tiskara-web-shop</link>
+     <title>“Tiskara.hr” Web Shop - Marko Idzan</title>
+     <description>“Tiskara.hr” Web Shop Project</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/project/croatian-states-woocommerce</link>
+     <title>Croatian States Plugin for WooCommerce - Marko Idzan</title>
+     <description>Croatian States Plugin for WooCommerce Project</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/project/maskice-android-application</link>
+     <title>“maskice.hr” for Android&amp;trade; Application - Marko Idzan</title>
+     <description>“maskice.hr” for Android&amp;trade; Application Project</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/project/twitter-python-bot</link>
+     <title>Python bot for Twitter (Retweet/Like Bot) - Marko Idzan</title>
+     <description>Python bot for Twitter (Retweet/Like Bot) Project</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/project/ceramics-craft-bm-web-site</link>
+     <title>Ceramics Craft “BM” Web Site - Marko Idzan</title>
+     <description>Ceramics Craft “BM” Web Site Project</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/project/marko93gaming-web-site</link>
+     <title>“Marko93 Gaming” Web Site - Marko Idzan</title>
+     <description>“Marko93 Gaming” Web Site Project</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/project/najam-vozila-web-site</link>
+     <title>“najam-vozila.hr” Web Site - Marko Idzan</title>
+     <description>“najam-vozila.hr” Web Site Project</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://idzan.eu/discord</link>
+     <title>Discord Server</title>
+     <description>Discord Server</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
