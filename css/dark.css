@@ -2,6 +2,17 @@
   :root {
     --color-mode: "dark";
   }
+  :root :focus {
+    outline: solid 1px var(--color-light);
+  }
+  ::-moz-selection {
+    background: var(--background);
+    color: var(--text-color);
+  }
+  ::selection {
+    background: var(--background);
+    color: var(--text-color);
+  }
   :root:not([data-user-color-scheme]) {
     --background: var(--color-dark);
     --text-color: var(--color-light);
@@ -10,6 +21,70 @@
     --button-background: var(--color-light);
     --button-color: var(--color-dark);
     --border-color: var(--color-light-alpha);
+  }
+  a {
+    color: var(--color-light);
+    text-decoration: none;
+  }
+  a:visited {
+    color: var(--color-link-visited-dark);
+  }
+  hr {
+    color: var(--color-light);
+  }
+  nav .menu-item {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-light)), to(var(--color-light)));
+    background-image: linear-gradient(var(--color-light), var(--color-light));
+  }
+  nav .menu-item[aria-current] {
+    border-bottom: 2px solid var(--color-light);
+  }
+  .menu span, .menu span:before, .menu span:after {
+    background: var(--color-light);
+  }
+  .legal a {
+    color: var(--color-light);
+  }
+  .cta {
+    background: var(--color-accent);
+    color: var(--color-light);
+  }
+  .cta:visited {
+    color: var(--color-light);
+  }
+  .portfolio .learnmore {
+    background: var(--color-accent);
+    color: var(--color-light);
+  }
+  .returnback {
+    color: var(--color-light);
+    background: var(--color-accent);
+  }
+  .returnback:visited {
+    color: var(--color-light);
+  }
+  .details .icon {
+    fill: var(--color-light);
+  }
+  .details a {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-light)), to(var(--color-light)));
+    background-image: linear-gradient(var(--color-light), var(--color-light));
+  }
+  input, textarea {
+    background-color: var(--color-light);
+    color: var(--color-secondary-dark);
+  }
+  button {
+    background: var(--color-accent);
+    color: var(--color-light);
+  }
+  .star {
+    fill: var(--color-light);
+    padding-left: 1em;
+  }
+  .contact {
+    fill: var(--color-light);
+    padding-right: 1em;
   }
 }
 
@@ -21,4 +96,86 @@
   --button-background: var(--color-light-alpha);
   --button-color: var(--color-dark);
   --border-color: var(--color-light-alpha);
+}
+
+[data-user-color-scheme="dark"] a {
+  color: var(--color-light);
+  text-decoration: none;
+}
+
+[data-user-color-scheme="dark"] a:visited {
+  color: var(--color-link-visited-dark);
+}
+
+[data-user-color-scheme="dark"] hr {
+  color: var(--color-light);
+}
+
+[data-user-color-scheme="dark"] nav .menu-item {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-light)), to(var(--color-light)));
+  background-image: linear-gradient(var(--color-light), var(--color-light));
+}
+
+[data-user-color-scheme="dark"] nav .menu-item[aria-current] {
+  border-bottom: 2px solid var(--color-light);
+}
+
+[data-user-color-scheme="dark"] .menu span, [data-user-color-scheme="dark"] .menu span:before, [data-user-color-scheme="dark"] .menu span:after {
+  background: var(--color-light);
+}
+
+[data-user-color-scheme="dark"] .legal a {
+  color: var(--color-light);
+}
+
+[data-user-color-scheme="dark"] .cta {
+  background: var(--color-accent);
+  color: var(--color-light);
+}
+
+[data-user-color-scheme="dark"] .cta:visited {
+  color: var(--color-light);
+}
+
+[data-user-color-scheme="dark"] .portfolio .learnmore {
+  background: var(--color-accent);
+  color: var(--color-light);
+}
+
+[data-user-color-scheme="dark"] .returnback {
+  color: var(--color-light);
+  background: var(--color-accent);
+}
+
+[data-user-color-scheme="dark"] .returnback:visited {
+  color: var(--color-light);
+}
+
+[data-user-color-scheme="dark"] .details .icon {
+  fill: var(--color-light);
+}
+
+[data-user-color-scheme="dark"] .details a {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-light)), to(var(--color-light)));
+  background-image: linear-gradient(var(--color-light), var(--color-light));
+}
+
+[data-user-color-scheme="dark"] input, [data-user-color-scheme="dark"] textarea {
+  background-color: var(--color-light);
+  color: var(--color-secondary-dark);
+}
+
+[data-user-color-scheme="dark"] button {
+  background: var(--color-accent);
+  color: var(--color-light);
+}
+
+[data-user-color-scheme="dark"] .star {
+  fill: var(--color-light);
+  padding-left: 1em;
+}
+
+[data-user-color-scheme="dark"] .contact {
+  fill: var(--color-light);
+  padding-right: 1em;
 }

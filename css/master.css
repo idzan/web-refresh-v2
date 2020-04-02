@@ -31,6 +31,10 @@
   --color-secondary: #393d46;
   --color-dark-secondary: #2c4a6b;
   --color-link: #4cb2d4;
+  --color-link-visited: #1f6981;
+  --color-link-visited-dark: #b3deed;
+  --color-accent: #08759a;
+  --color-secondary-darken: #17181c;
   --icon-sun: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">  <path d="M18 12c0-0.811-0.161-1.587-0.455-2.295-0.304-0.735-0.75-1.395-1.303-1.948-0.552-0.552-1.213-0.998-1.948-1.303-0.707-0.293-1.483-0.454-2.294-0.454s-1.587 0.161-2.295 0.455c-0.735 0.304-1.395 0.75-1.948 1.302s-0.998 1.213-1.302 1.948c-0.294 0.708-0.455 1.484-0.455 2.295s0.161 1.587 0.455 2.295c0.304 0.735 0.75 1.395 1.303 1.948 0.552 0.552 1.213 0.998 1.948 1.303 0.707 0.293 1.483 0.454 2.294 0.454s1.587-0.161 2.295-0.455c0.735-0.304 1.395-0.75 1.948-1.303s0.998-1.213 1.303-1.948c0.293-0.707 0.454-1.483 0.454-2.294zM16 12c0 0.544-0.108 1.060-0.303 1.529-0.202 0.489-0.5 0.929-0.869 1.299s-0.81 0.667-1.299 0.869c-0.469 0.195-0.985 0.303-1.529 0.303s-1.060-0.108-1.529-0.303c-0.489-0.202-0.929-0.5-1.299-0.869s-0.667-0.81-0.869-1.299c-0.195-0.469-0.303-0.985-0.303-1.529s0.108-1.060 0.303-1.529c0.202-0.489 0.5-0.929 0.869-1.299s0.81-0.667 1.299-0.869c0.469-0.195 0.985-0.303 1.529-0.303s1.060 0.108 1.529 0.303c0.489 0.202 0.929 0.5 1.299 0.869s0.667 0.81 0.869 1.299c0.195 0.469 0.303 0.985 0.303 1.529zM11 1v2c0 0.552 0.448 1 1 1s1-0.448 1-1v-2c0-0.552-0.448-1-1-1s-1 0.448-1 1zM11 21v2c0 0.552 0.448 1 1 1s1-0.448 1-1v-2c0-0.552-0.448-1-1-1s-1 0.448-1 1zM3.513 4.927l1.42 1.42c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-1.42-1.42c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414zM17.653 19.067l1.42 1.42c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-1.42-1.42c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414zM1 13h2c0.552 0 1-0.448 1-1s-0.448-1-1-1h-2c-0.552 0-1 0.448-1 1s0.448 1 1 1zM21 13h2c0.552 0 1-0.448 1-1s-0.448-1-1-1h-2c-0.552 0-1 0.448-1 1s0.448 1 1 1zM4.927 20.487l1.42-1.42c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-1.42 1.42c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0zM19.067 6.347l1.42-1.42c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-1.42 1.42c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0z"></path></svg>');
   --icon-moon: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">  <path d="M21.996 12.882c0.022-0.233-0.038-0.476-0.188-0.681-0.325-0.446-0.951-0.544-1.397-0.219-0.95 0.693-2.059 1.086-3.188 1.162-0.696 0.047-1.399-0.027-2.077-0.226-0.656-0.192-1.29-0.501-1.874-0.932-0.655-0.484-1.181-1.074-1.575-1.729-0.409-0.68-0.676-1.432-0.792-2.206s-0.082-1.571 0.11-2.342c0.184-0.741 0.514-1.46 0.999-2.115 0.142-0.191 0.216-0.435 0.191-0.691-0.053-0.55-0.542-0.952-1.092-0.898-1.117 0.109-2.186 0.399-3.172 0.843-1.005 0.452-1.925 1.065-2.723 1.808-0.883 0.82-1.618 1.801-2.159 2.901-0.523 1.064-0.863 2.238-0.978 3.485-0.125 1.347 0.024 2.658 0.402 3.878 0.392 1.266 1.031 2.431 1.863 3.433s1.86 1.843 3.033 2.461c1.13 0.595 2.392 0.982 3.739 1.106s2.659-0.025 3.878-0.403c1.266-0.392 2.431-1.031 3.433-1.863s1.843-1.86 2.461-3.033c0.595-1.13 0.982-2.392 1.106-3.739zM19.567 14.674c-0.126 0.351-0.276 0.689-0.447 1.014-0.493 0.937-1.166 1.76-1.969 2.427s-1.735 1.178-2.747 1.491c-0.973 0.302-2.021 0.421-3.102 0.321s-2.089-0.41-2.99-0.884c-0.937-0.493-1.76-1.166-2.427-1.969s-1.178-1.735-1.491-2.747c-0.302-0.973-0.421-2.021-0.321-3.102 0.092-1 0.365-1.938 0.782-2.786 0.43-0.878 1.018-1.661 1.725-2.319 0.64-0.595 1.377-1.086 2.183-1.449 0.179-0.081 0.362-0.155 0.548-0.223-0.092 0.257-0.171 0.516-0.236 0.778-0.256 1.029-0.302 2.091-0.147 3.121s0.51 2.032 1.056 2.941c0.527 0.875 1.23 1.663 2.1 2.306 0.775 0.573 1.622 0.986 2.5 1.243 0.907 0.266 1.846 0.364 2.772 0.302 0.752-0.050 1.496-0.207 2.21-0.465z"></path></svg>');
   --icon-sun-filter: nvert(0.61) sepia(0.8) saturate(5) hue-rotate(0deg) brightness(0.92);
@@ -496,7 +500,11 @@ a {
 }
 
 a:visited {
-  color: #1f6981;
+  color: var(--color-link-visited);
+}
+
+hr {
+  color: var(--color-dark);
 }
 
 nav .menu-item {
@@ -504,7 +512,7 @@ nav .menu-item {
   background-image: linear-gradient(var(--color-dark), var(--color-dark));
 }
 
-nav[aria-current] {
+nav .menu-item[aria-current] {
   border-bottom: 2px solid var(--color-dark);
 }
 
@@ -512,9 +520,76 @@ nav[aria-current] {
   background: var(--color-dark);
 }
 
+.legal a {
+  color: var(--color-dark);
+}
+
+.cta {
+  background: var(--color-accent);
+  color: var(--color-dark);
+}
+
+.cta:visited {
+  color: var(--color-dark);
+}
+
+.portfolio .learnmore {
+  background: var(--color-accent);
+  color: var(--color-dark);
+}
+
+.returnback {
+  color: var(--color-dark);
+  background: var(--color-accent);
+}
+
+.returnback:visited {
+  color: var(--color-dark);
+}
+
+.details .icon {
+  fill: var(--color-dark);
+}
+
+.details a {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-dark)), to(var(--color-dark)));
+  background-image: linear-gradient(var(--color-dark), var(--color-dark));
+}
+
+input, textarea {
+  background-color: var(--color-light);
+  color: var(--color-secondary-darken);
+}
+
+button {
+  background: var(--color-accent);
+  color: var(--color-dark);
+}
+
+.star {
+  fill: var(--color-dark);
+  padding-left: 1em;
+}
+
+.contact {
+  fill: var(--color-dark);
+  padding-right: 1em;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-mode: "dark";
+  }
+  :root :focus {
+    outline: solid 1px var(--color-light);
+  }
+  ::-moz-selection {
+    background: var(--background);
+    color: var(--text-color);
+  }
+  ::selection {
+    background: var(--background);
+    color: var(--text-color);
   }
   :root:not([data-user-color-scheme]) {
     --background: var(--color-dark);
@@ -526,11 +601,68 @@ nav[aria-current] {
     --border-color: var(--color-light-alpha);
   }
   a {
-    color: var(--color-link);
+    color: var(--color-light);
     text-decoration: none;
   }
   a:visited {
-    color: #b3deed;
+    color: var(--color-link-visited-dark);
+  }
+  hr {
+    color: var(--color-light);
+  }
+  nav .menu-item {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-light)), to(var(--color-light)));
+    background-image: linear-gradient(var(--color-light), var(--color-light));
+  }
+  nav .menu-item[aria-current] {
+    border-bottom: 2px solid var(--color-light);
+  }
+  .menu span, .menu span:before, .menu span:after {
+    background: var(--color-light);
+  }
+  .legal a {
+    color: var(--color-light);
+  }
+  .cta {
+    background: var(--color-accent);
+    color: var(--color-light);
+  }
+  .cta:visited {
+    color: var(--color-light);
+  }
+  .portfolio .learnmore {
+    background: var(--color-accent);
+    color: var(--color-light);
+  }
+  .returnback {
+    color: var(--color-light);
+    background: var(--color-accent);
+  }
+  .returnback:visited {
+    color: var(--color-light);
+  }
+  .details .icon {
+    fill: var(--color-light);
+  }
+  .details a {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-light)), to(var(--color-light)));
+    background-image: linear-gradient(var(--color-light), var(--color-light));
+  }
+  input, textarea {
+    background-color: var(--color-light);
+    color: var(--color-secondary-dark);
+  }
+  button {
+    background: var(--color-accent);
+    color: var(--color-light);
+  }
+  .star {
+    fill: var(--color-light);
+    padding-left: 1em;
+  }
+  .contact {
+    fill: var(--color-light);
+    padding-right: 1em;
   }
 }
 
