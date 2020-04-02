@@ -22,16 +22,16 @@
     --button-icon: var(--icon-moon);
     --button-icon-filter: var(--icon-moon-filter);
 
-    --facebook: var(--facebook);
-    --twitter: var(--twitter);
-    --linkedin: var(--linkedin);
-    --instagram: var(--instagram);
-    --youtube: var(--youtube);
-    --github: var(--github);
-    --reddit: var(--reddit);
-    --discord: var(--discord);
-    --whatsapp: var(--whatsapp);
-    --viber: var(--viber);
+    --facebook: var(--facebook-light);
+    --twitter: var(--twitter-light);
+    --linkedin: var(--linkedin-light);
+    --instagram: var(--instagram-light);
+    --youtube: var(--youtube-light);
+    --github: var(--github-light);
+    --reddit: var(--reddit-light);
+    --discord: var(--discord-light);
+    --whatsapp: var(--whatsapp-light);
+    --viber: var(--viber-light);
     --other-icons: var(--color-dark);
 
     :focus {
@@ -60,11 +60,11 @@ a {
 nav {
 
     .menu-item {
-        color: var(--dark);
-        background-image: linear-gradient(var(--dark), var(--dark));
+        color: var(--text-color);
+        background-image: linear-gradient(var(--text-color), var(--text-color));
 
         &[aria-current] {
-            border-bottom: 2px solid var(--dark);
+            border-bottom: 2px solid var(--text-color);
         }
     }
 }
@@ -72,7 +72,7 @@ nav {
 .menu {
 
     span, span:before, span:after {
-        background: var(--dark);
+        background: var(--text-color);
     }
 }
 

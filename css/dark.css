@@ -53,14 +53,14 @@
   }
   nav .menu-item {
     color: var(--text-color);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--light)), to(var(--light)));
-    background-image: linear-gradient(var(--light), var(--light));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--text-color)), to(var(--text-color)));
+    background-image: linear-gradient(var(--text-color), var(--text-color));
   }
   nav .menu-item[aria-current] {
-    border-bottom: 2px solid var(--light);
+    border-bottom: 2px solid var(--text-color);
   }
   .menu span, .menu span:before, .menu span:after {
-    background: var(--light);
+    background: var(--text-color);
   }
   .legal a {
     color: var(--text-color);

@@ -41,16 +41,16 @@
   --color-red: #ba1e04;
   --color-dark-alpha: rgba(32, 39, 49, 0.1);
   --color-light-alpha: rgba(238, 238, 238, 0.9);
-  --facebook: #3b5998;
-  --twitter: #1da1f2;
-  --linkedin: #0077b5;
-  --instagram: #e1306c;
-  --youtube: #ff0000;
-  --github: #333;
-  --reddit: #ff4500;
-  --discord: #7289da;
-  --whatsapp: #075e54;
-  --viber: #59267c;
+  --facebook-light: #3b5998;
+  --twitter-light: #1da1f2;
+  --linkedin-light: #0077b5;
+  --instagram-light: #e1306c;
+  --youtube-light: #ff0000;
+  --github-light: #333;
+  --reddit-light: #ff4500;
+  --discord-light: #7289da;
+  --whatsapp-light: #075e54;
+  --viber-light: #59267c;
   --facebook-dark: #eee;
   --twitter-dark: #e1e8ed;
   --linkedin-dark: #caccce;
@@ -511,16 +511,16 @@ footer {
   --border-color: var(--color-dark-alpha);
   --button-icon: var(--icon-moon);
   --button-icon-filter: var(--icon-moon-filter);
-  --facebook: var(--facebook);
-  --twitter: var(--twitter);
-  --linkedin: var(--linkedin);
-  --instagram: var(--instagram);
-  --youtube: var(--youtube);
-  --github: var(--github);
-  --reddit: var(--reddit);
-  --discord: var(--discord);
-  --whatsapp: var(--whatsapp);
-  --viber: var(--viber);
+  --facebook: var(--facebook-light);
+  --twitter: var(--twitter-light);
+  --linkedin: var(--linkedin-light);
+  --instagram: var(--instagram-light);
+  --youtube: var(--youtube-light);
+  --github: var(--github-light);
+  --reddit: var(--reddit-light);
+  --discord: var(--discord-light);
+  --whatsapp: var(--whatsapp-light);
+  --viber: var(--viber-light);
   --other-icons: var(--color-dark);
 }
 
@@ -552,17 +552,17 @@ a:visited {
 }
 
 nav .menu-item {
-  color: var(--dark);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--dark)), to(var(--dark)));
-  background-image: linear-gradient(var(--dark), var(--dark));
+  color: var(--text-color);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--text-color)), to(var(--text-color)));
+  background-image: linear-gradient(var(--text-color), var(--text-color));
 }
 
 nav .menu-item[aria-current] {
-  border-bottom: 2px solid var(--dark);
+  border-bottom: 2px solid var(--text-color);
 }
 
 .menu span, .menu span:before, .menu span:after {
-  background: var(--dark);
+  background: var(--text-color);
 }
 
 .legal a {
@@ -701,14 +701,14 @@ button {
   }
   nav .menu-item {
     color: var(--text-color);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--light)), to(var(--light)));
-    background-image: linear-gradient(var(--light), var(--light));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--text-color)), to(var(--text-color)));
+    background-image: linear-gradient(var(--text-color), var(--text-color));
   }
   nav .menu-item[aria-current] {
-    border-bottom: 2px solid var(--light);
+    border-bottom: 2px solid var(--text-color);
   }
   .menu span, .menu span:before, .menu span:after {
-    background: var(--light);
+    background: var(--text-color);
   }
   .legal a {
     color: var(--text-color);

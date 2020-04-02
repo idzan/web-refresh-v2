@@ -66,10 +66,10 @@
 
         .menu-item {
             color: var(--text-color);
-            background-image: linear-gradient(var(--light), var(--light));
+            background-image: linear-gradient(var(--text-color), var(--text-color));
     
             &[aria-current] {
-                border-bottom: 2px solid var(--light);
+                border-bottom: 2px solid var(--text-color);
             }
         }
     }
@@ -77,7 +77,7 @@
     .menu {
 
         span, span:before, span:after {
-            background: var(--light);
+            background: var(--text-color);
         }
     }
 
