@@ -23,23 +23,18 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: var(--color-link-visited);
+        color: darken($links, 25%);
     }
-}
-
-hr {
-    color: var(--color-dark);
 }
 
 nav {
     .menu-item {
         background-image: linear-gradient(var(--color-dark), var(--color-dark));
-
-        &[aria-current] {
-            border-bottom: 2px solid var(--color-dark);
-        }
     }
 
+    &[aria-current] {
+        border-bottom: 2px solid var(--color-dark);
+    }
 }
 
 .menu {
@@ -47,68 +42,4 @@ nav {
     span, span:before, span:after {
         background: var(--color-dark);
     }
-}
-
-.legal {
-
-    a {
-        color: var(--color-dark);
-    }
-}
-
-.cta {
-    background: var(--color-accent);
-    color: var(--color-dark);
-
-    &:visited {
-        color: var(--color-dark);
-    }
-}
-
-.portfolio {
-
-    .learnmore {
-        background: var(--color-accent);
-        color: var(--color-dark);
-    }
-}
-
-.returnback {
-    color: var(--color-dark);
-    background: var(--color-accent);
-
-    &:visited {
-        color: var(--color-dark);
-    }
-}
-
-.details {
-
-    .icon {
-        fill: var(--color-dark);
-    }
-
-    a {
-        background-image: linear-gradient(var(--color-dark), var(--color-dark));
-    }
-}
-
-input, textarea {
-    background-color: var(--color-light);
-    color: var(--color-secondary-darken);
-}
-
-button {
-    background: var(--color-accent);
-    color: var(--color-dark);
-}
-
-.star {
-    fill: var(--color-dark);
-    padding-left: 1em;
-}
-
-.contact {
-    fill: var(--color-dark);
-    padding-right: 1em;
 }
