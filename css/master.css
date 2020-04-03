@@ -424,6 +424,11 @@ button {
   padding-right: 1em;
 }
 
+.g-recaptcha {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;

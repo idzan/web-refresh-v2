@@ -32,3 +32,8 @@ button {
 .contact {
   padding-right: 1em;
 }
+
+.g-recaptcha {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
